@@ -1,0 +1,729 @@
+table#tbl {/* outline: 1px solid red; */width: 100%;margin: 0 !important;padding: 0 !important;}
+
+td#tblspnt {
+    width: 100% !important;
+    /*     outline: 1px solid blue; */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+td#tblspnt_ {
+    width: 100% !important;
+    /* outline: 1px solid green; */
+    padding: 0 !important;
+    margin: 0 -2px !important;
+    display: block;
+}
+
+div#spnt {
+    width: 100% !important;
+    /* outline: 1px solid black; */
+    height: auto !important;
+    margin: 64px 0 0 0;
+}
+
+div#spnt.header {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+div#spnt.header {}
+
+div#spnt>div[id="spnt.header"].ieEncabezado {
+    text-align: right !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: 64px !important;
+    background: white url(https://www.santander.com.mx/santander_footer_header/images/logo_santander_footer.png) no-repeat left center !important;
+    top: 0 !important;
+    position: fixed !important;
+    z-index: 2;
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
+
+.ieEncabezado img {
+    display: none !important;
+}
+
+.ieEncabezado font, div[id="spnt.header"]>font {
+    /* outline: 1px solid green; */
+    position: static !important;
+    line-height: 0;
+    text-decoration: none;
+    font-family: 'Arial' !important;
+    font-size: 12px !important;
+    margin: 18px 0 0 0 !important;
+    display: inline-block !important;
+    text-shadow: none;
+    color: #424242;
+    padding: 10px;
+}
+
+#spnt div[id="spnt.tabctrl"] {
+    text-align: left !important;
+    padding: 16px 16px 0 0;
+    position: fixed !important;
+    /* background: #eeeeee; */
+    top: 64px !important;
+    z-index: 1;
+    left: 0 !important;
+    width: 222px !important;
+    height: calc(100vh - 64px) !important;
+}
+
+#spnt div[id="spnt.tabctrl"] > * {
+    position: initial !important;
+    float: none !important;
+    display: block;
+    vertical-align: middle !important;
+    height: auto !important;
+    /* outline: 12px solid orangered; */
+    cursor: pointer;
+}
+
+
+#spnt div[id="spnt.tabctrl"] > * .ieLeftTab,
+#spnt div[id="spnt.tabctrl"] > * .ieRightTab {
+    display: none !important;
+}
+
+#spnt > div:nth-child(2) > div > div:nth-child(2) {
+    height: auto !important;
+    width: 100% !important;
+    /* outline: 6px solid green; */
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+#spnt > div:nth-child(2) > div > div:nth-child(2) img {
+    display: none !important;
+}
+
+#spnt > div > div > div:nth-child(2) fieldset {
+    /* outline: 3px solid blue; */
+    position: static !important;
+    width: auto !important;
+    display: block !important;
+}
+
+#spnt > div > div > div:nth-child(2) fieldset font:hover {
+    color: red !important;
+    background: white;
+}
+#spnt > div > div > div:nth-child(2) fieldset font.bodyTabOff {
+    border-left: 5px solid red !important;
+    color: red !important;
+}
+#spnt > div > div > div:nth-child(2) fieldset font {
+    padding: 10px  14px!important;
+    /* outline: solid #3F51B5; */
+    color: rgba(0, 0, 0, 0.85) !important;
+    font-size: 16px !important;
+    cursor: inherit !important;
+    text-align: inherit !important;
+    font-family: 'Arial' !important;
+    font-weight: normal !important;
+    display: block !important;
+    width: 100% !important;
+    font-weight: 500 !important;
+    margin: 0 0 5px 0 !important;
+    border-radius: 3px 3px 15px 4px;
+    transition: .3s;
+}
+
+div#spnt > .indraUnderMenu {
+    margin: 11px auto 16px 222px !important;
+    background: rgba(255, 255, 255, 0.85) url(https://png.icons8.com/windows/35/e74c3c/person-male.png) no-repeat left center !important;
+    width: calc(100% - 222px) !important;
+    /* height: auto !important; */
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 0 0 0 34px !important;
+}
+
+div#spnt > .indraUnderMenu > * {
+    /* display: block !important; */
+    /* outline: 1px solid red; */
+    /* position: static !important; */
+}
+
+div#spnt > .indraUnderMenu > div:first-child {
+    position: static !important;
+    /* width: 0 !important; */
+    /* height: 0 !important; */
+    display: none !important;
+}
+
+div#spnt > .indraUnderMenu > font.ieBanda, div#spnt > .indraUnderMenu > font.ieNombre, div#spnt > .indraUnderMenu > font#mainFecha {
+    /* float: left; */
+}
+
+div#spnt > .ieTabDivs {
+    background: transparent !important;
+    margin: 0 auto 0 222px !important;
+    width: 80% !important;
+    position: relative !important;
+    padding: 0 !important;
+    display: inline-block !important;
+}
+
+body#supernet {
+    padding: 0;
+    margin: 0 !important;
+    background-color: #E0E0E0 !important;
+    background-image: url(https://png2.kisspng.com/20171208/e44/5a2a8aad4fabc7.7070159915127374533263.png) !important;
+    background-position-y: 84vh !important;
+    background-repeat-y: no-repeat !important;
+    background-size: 309px 198px !important;
+}
+
+tr#i4 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+table#tbl > tbody {}
+
+div#spnt > .ieTabDivs > div.ieTransparent.ieTabMSDR.ieTab {
+    background: transparent !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    font-size: 0px !important;
+    float: none !important;
+}
+
+div#spnt > .ieTabDivs > div.ieTransparent.ieTabMSDR.ieTab > div.ieOprp {
+    float: none;
+    /* background: black !important; */
+    width: 20% !important;
+    margin: 34px 0 0 3px !important;
+    display: inline-block !important;
+    vertical-align: top;
+    font-size: 16px !important;
+    /* overflow: hidden; */
+}
+
+div#spnt > .ieTabDivs > div.ieTransparent.ieTabMSDR.ieTab > div.ieOprp > div.utilWnd {
+    width: 100% !important;
+    margin: 0;
+    height: auto !important;
+    background: white !important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    margin: 0 0 30rem 0 !important;
+    padding: 1rem;
+    border-radius: 4px 4px 32px 8px;
+}
+
+div#spnt > .ieTabDivs > div.ieTransparent.ieTabMSDR.ieTab > div.msdr {
+    float: none;
+    width: calc(80% - 222px) !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    vertical-align: top;
+    font-size: 16px !important;
+    position: static !important;
+}
+
+div#spnt > .ieTabDivs > div.ieTransparent.ieTabMSDR.ieTab > * {
+    /* outline: 8px solid yellow !important; */
+}
+
+div.mainWin {
+    min-width: 80vw;
+    /* min-height: 80vh; */
+    box-shadow: 0 0 0 200vw #00000066, 0 0 83px 0px #0000006e;
+    overflow: hidden;
+    border-radius: 16px 16px 64px 5px;
+    border-top: none !important;
+    /* padding: 0 0 64px 0; */
+    height: auto !important;
+}
+
+table.eTable * {
+    font-family: 'Arial' !important;
+}
+
+[id="trjtasCredito.summ.main"] > table > tbody > tr:nth-child(2) td:first-child {
+    padding: 14px 0 14px 24px !important;
+}
+
+[id="trjtasCredito.summ.main"] > table > tbody > tr:nth-child(2) td:last-child {
+    padding: 14px 14px 24px 0 !important;
+}
+
+[id="trjtasCredito.summ.main"] > table > tbody > tr:first-child td,
+[id="trjtasCredito.summ.main"] > table > tbody > tr:nth-child(2) td,
+table.eTable tr.tableHeading td {
+    padding: 14px 0 !important;
+    font-size: 13px !important;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7) !important;
+    text-transform: uppercase;
+}
+
+[id="trjtasCredito.summ.main"] > table tr td:fisrt-child,
+table.eTable tr td:fisrt-child {
+    padding: 14px 0 14px 24px !important ;
+}
+
+[id="trjtasCredito.summ.main"] > table tr td,
+table.eTable tr td {
+    font-size:13px;
+    font-style:normal;
+    font-weight:400;
+    padding: 6px 0 !important;
+    line-height: 19.5px;
+    color: rgb(111, 123, 138) !Important;
+}
+
+[id="trjtasCredito.summ.main"] > table tr td,
+table.eTable tr td {
+    background: transparent !important;
+}
+
+[id="trjtasCredito.summ.main"] > table tr:not(.tableHeading):nth-child(odd),
+table.eTable tr:not(.tableHeading):nth-child(odd) {
+    background: #f9f9f9 !important;
+}
+
+[id="trjtasCredito.summ.main"] > table tr td,
+table.eTable tr td {
+    border-bottom: 1px solid rgba(0,0,0,0.12) !important;
+    background: transparent !important; 
+}
+
+[id="trjtasCredito.summ.main"] > table tr td:first-child,
+table.eTable tr td:first-child {
+    padding: 14px 0 14px 24px !important;
+}
+
+[id="trjtasCredito.summ.main"] > table tr td:last-child,
+table.eTable tr td:last-child {
+    padding: 14px 24px 14px 0 !important;
+}
+
+[id="trjtasCredito.summ.main"] > table tr:not(.tableHeading):hover, 
+table.eTable tr:not(.tableHeading):hover {
+    background: #EEEEEE !Important;
+    transition: .3s !important;
+}
+
+div#divUltsMvtos {
+    width: 100% !important;
+    position: static !important;
+}
+
+div#UtilDialogBody {
+    display: block;
+    width: 100% !important;
+    position: static !important;
+    height: auto !important;
+}
+
+table.eTable {
+    width: 100% !important;
+    background: white !important;
+}
+
+table.eTable tr td:nth-child(4) {
+    text-transform: uppercase;
+}
+
+div.mainWin[id="loading.UtilDialog"] {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    border: 0 !important;
+    background: transparent !important; !important
+    display:;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    border-radius: 0 !important;
+}
+
+div.mainWin[id="loading.UtilDialog"] * {
+    position: static !important;
+    /* outline: 1px solid yellow; */
+    width: 100% !important;
+    display: none;
+}
+
+div.mainWin[id="loading.UtilDialog"] > div.title {
+    display: none;
+}
+
+div.mainWin[id="loading.UtilDialog"] > div.win_bckg {
+    width: 213px !important;
+    height: auto !important;
+    background: #eb1720 url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Banco_Santander_Logotipo.svg/1280px-Banco_Santander_Logotipo.png) no-repeat 50px 14px !important;
+    background-size: 140px!important;
+    display: flex;
+    /* border-radius: 50% !important; */
+    margin: 0 auto;
+    justify-content: center;
+    /* box-shadow: 0 0 20px 0px black; */
+    align-items: center;
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 38px !important;
+    top: initial !important;
+    padding: 16px;
+    border-radius: 4px 4px 32px 8px;
+    box-shadow: -2px -2px 20px 0px rgba(0, 0, 0, 0.7);
+    animation: loadInfo 1s infinite;
+    z-index: 10;
+    left: initial !important;
+}
+
+@keyframes loadInfo {
+    0%, 100% {
+        background-color: #eb1720;
+    }
+    50% {
+        background-color    : #212121;
+    }
+}
+
+div.mainWin[id="loading.UtilDialog"] > div.win_bckg #loadingCont {
+    display: block;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    position: static !important;
+    margin: 0 auto 0 0 !important;
+    background: url(https://png.icons8.com/windows/25/ffffff/refresh.png) no-repeat center center !important;
+    animation-name: load;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+transform: rotate(360deg)
+    }
+}
+
+button.accionBtn {
+    background: #fe0000 !important;
+    display: inline-block !important;
+    color: white !important;
+    padding: .5rem 1rem !important;
+    line-height: 1 !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 3px !important;
+    font-size: 16px !important;
+    font-family: arial !important;
+    text-transform: uppercase !important;
+    margin: 0 10px !important;
+    /* position: static !important; */
+    /* box-shadow: none !important; */
+    transition: .3s !important;
+}
+
+tr#i4 div#spnt div.ieTransparent[id="spnt.mnsg"], tr#i4 div#spnt div.ieTransparent[id="spnt.mnsg2"] {
+    background: #8BC34A !important;
+    width: 20% !important;
+    top: 0 !important;
+    position: static !important;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mainLogin .title, .mainWin .title {
+    background: red !important;
+    color: white !important;
+    display: block !important;
+    position: static !important;
+    height: auto !important;
+    width: 100% !important;
+}
+
+.mainWin .title font {
+    display: block !important;
+    height: auto !important;
+    width: auto !important;
+    position: static !important;
+    color: white !important;
+    text-transform: uppercase;
+    padding: 5px !important;
+    font-size: 16px !important;
+}
+
+div.win_bckg {
+    /* padding: 1rem !important; */
+}
+
+table.eTable .tableHeading {
+    background: rgba(0,0,0,0.12) !important;
+}
+
+
+div#divBot1 {
+    position: static  !important;
+    height: auto !important;
+    /* outline: 10px solid red; */
+    width: 100% !important;
+    padding: 1rem 0 !important;
+}
+
+div#divBot1 .accionBtn {
+    position: static !important;
+}
+
+div.mainWin > * * {
+    position: static !important;
+}
+
+div#UtilDialog.mainWin {
+    transform: translateX(-12%);
+}
+
+.actionBtn:hover {
+    box-shadow: 5px 5px 5px rgba(64,64,64,0.5) !important;
+}
+
+button.accionBtn:hover {
+    box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.41);
+    background: #bb0000 !important;
+}
+
+div#spnt div.utilBody {
+    background: transparent !important;
+    overflow: initial !important;
+    height: auto !important;
+}
+
+.ieTransparent.ieTabMSDR.ieTab[id="spnt.tabdivs.msdr"] {background: transparent !important;}
+
+
+div[id="#trjtasCredito.summ.main"] {
+    height: auto !important;
+}
+
+[id="trjtasCredito.summ.main"] {
+    height: auto !important;
+    overflow: initial !important;
+    position: static !important;
+    /* min-height: 30vh; */
+    /* background: red; */
+}
+
+#spnt div.caja-header {
+    /* height: auto !important; */
+}
+
+div.mainOperations  table {
+    position: relative !important;
+}
+
+[id="trjtasCredito.summ.main"] > table tr:last-child td:last-child > b {
+    background: #707070 !important;
+    padding: 5px;
+    border-radius: 3px;
+    color: white !important;
+    margin: 0 -5px 0 0;
+    font-weight: normal;
+}
+
+div.mainOperations {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    margin: 0 0 1rem 0 !important;
+    padding: 0 1rem 1rem;
+    border-radius: 4px 4px 32px 8px;
+    overflow: hidden;
+    background: #ffffff;
+    color: white !important;
+    border: none !important;
+}
+
+div.mainOperations div.caja-header {
+    background-color: #c7151500 !important;
+    padding: 1rem !important;
+    height: auto !important;
+    position: static !important;
+    margin: 0 0 .5rem 0 !important;
+}
+
+div.mainOperations div.mainOperations {
+    /* background: red; */
+    /* border: none !important; */
+    /* color: white  !important; */
+}
+
+font.linkunder {
+    text-decoration: none;
+}
+
+div.mainOperations table:hover font.linkunder {
+    text-decoration: underline;
+    animation: enfasis 1s linear;
+}
+
+font.underline u {
+    text-decoration: none;
+}
+
+@keyframes enfasis {
+    0% {
+        color: black;
+    }
+    50% {
+        color: #8BC34A;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.ieEncabezado > font:last-child {
+    background: #EEEEEE url(https://png.icons8.com/ios-glyphs/20/424242/exit.png) no-repeat 6px center;
+    padding: 14px 10px 14px 30px !important;
+    margin: 18px 16px 0 0 !important;
+    border-radius: 3px;
+}
+
+.ieEncabezado > font:hover {
+    color: red !Important;
+}
+
+div.utilWnd {
+    border-top: none !important;
+}
+
+div.title {
+    border: none !important;
+}
+
+div.layer {
+    background: transparent !important;
+}
+
+div[id="zone0.ctasCheques.ifrDivCampana"] {
+    /* background: red !important; */
+    overflow: hidden;
+    border-radius: 3px 3px 30px 3px;
+}
+
+table#oprp.tablePlus div {
+    outline: 1px solid red;
+}
+
+table[id="oprp.tablePlus"] div div {
+    /* outline: 1px solid teal; */
+    width: 100% !important;
+    height: auto !important;
+}
+
+table[id="oprp.tablePlus"] div img.linked {
+    /* display: block; */
+    margin: 0 auto;
+    display: none;
+}
+
+td.oprap {
+    padding: 0 !important;
+}
+
+table[id="oprp.tablePlus"] div font {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
+    line-height: 1;
+    font-family: arial !important;
+    padding: 10px;
+    margin: 0 0 3px 0;
+    border-radius: 5px;
+}
+
+font#lblAlta123 {
+    background: #c4d334;
+}
+
+font#lblDomiciliar123 {
+    background: #af00b5;
+}
+
+font#lblDinero {
+    background: #ffbb00;
+}
+
+font#lblGanado {
+    background: #00b7cc;
+}
+
+font#lblNomina {}
+
+font#lblNomina {
+    background: #c4d334;
+}
+
+div[id="oprp.UtilWnd"] div {
+    /* height: auto !important; */
+    width: 100% !important;
+}
+
+div[id="oprp.UtilWnd"] table {
+    width: 100% !important;
+}
+
+div#ligasCta123 img {
+}
+
+div[id="oprp.UtilBody"] img {
+    display: none;
+}
+
+div[id="oprp.UtilBody"] font {
+    background: #757575;
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    position: static !important;
+    font-size: 16px !important;
+    color: #424242 !important;
+}
+
+div[id="oprp.UtilWnd"] div.oprpLabels {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+div[id="oprp.UtilWnd"] .fsiSubtitulo {
+    padding: 0;
+}
+
+div[id="pgtarquick.main"] {
+    background: white;
+    padding: 0rem 0 0 0;
+    height: auto !important;
+}
+
+div[id="pgtarquick.main"] > div {
+    outline: 1px solid red;
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 5px 0;
+}
+
+font[id="pgtarquick.title"] {
+    position: absolute !important;
+}
+
+div[id="spnt.tabdivs.pgs"]>.utilWnd>.utilBody>div>.mainOperations>div>.mainOperations>div>table.confirmData>tbody>tr>td>a:hover {
+    background: #E0E0E0;
+}
