@@ -63,7 +63,7 @@ div#spnt>div[id="spnt.header"].ieEncabezado {
     text-align: left !important;
     padding: 16px 16px 0 0;
     position: fixed !important;
-    /* background: #eeeeee; */
+    background: transparent !important; 
     top: 64px !important;
     z-index: 1;
     left: 0 !important;
