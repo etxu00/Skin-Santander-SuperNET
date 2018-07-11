@@ -442,6 +442,68 @@ body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg #loadingCont {
   position: static !important;
   width: 25px !important;
 }
+body#supernet table.eTable {
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+body#supernet table.eTable tr:hover {
+  background: #eee !important;
+}
+body#supernet table.eTable tr:not(.tableHeading):nth-child(odd) {
+  background: #f9f9f9;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+body#supernet table.eTable tr.tableHeading {
+  background: #e0e0e0 !important;
+}
+body#supernet table.eTable tr.tableHeading td {
+  border: none;
+  color: var(--texto) !important;
+  font-size: 13px;
+  font-weight: 700;
+  height: auto;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: inherit !important;
+}
+body#supernet table.eTable tr.tableHeading td:hover:after,
+body#supernet table.eTable tr.tableHeading td:hover:before {
+  content: '';
+  position: absolute;
+  min-height: 200vh;
+  top: 0;
+}
+body#supernet table.eTable tr.tableHeading td:hover:after {
+  border-left: 1px solid #c0c0c0;
+  left: 0;
+}
+body#supernet table.eTable tr.tableHeading td:hover:before {
+  border-right: 1px solid #c0c0c0;
+  right: 0;
+  width: 100%;
+}
+body#supernet table.eTable tr td:first-child {
+  padding: 14px 0 14px 24px !important;
+}
+body#supernet table.eTable tr td:last-child {
+  padding: 14px 24px 14px 0 !important;
+}
+body#supernet table.eTable tr td {
+  background: transparent !important;
+  border-bottom: 1px solid #e0e0e0;
+  color: #6f7b8a !important;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  padding: 6px 0 !important;
+}
 @-moz-keyframes backgrond {
   from {
     background-position: 0px 0px;
