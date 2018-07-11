@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+:root {
+  --fuente: 'Open Sans', 'Verdana', 'Arial', sans-serif;
+  --gris: #e0e0e0;
+  --rojo: #ec0000;
+  --texto: #212121;
+  --radius1: 0 3px 15px 0;
+}
+* {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+body#supernet {
+  background: var(--gris) !important;
+  color: var(--texto);
+  font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px 0 0 0;
+}
+body#supernet:after {
+  -webkit-animation: backgrond 10s linear infinite;
+  -moz-animation: backgrond 10s linear infinite;
+  -o-animation: backgrond 10s linear infinite;
+  -ms-animation: backgrond 10s linear infinite;
+  animation: backgrond 10s linear infinite;
+  background: url("https://nucleoapp.com/assets/img/premium-icons/outline_48px_school-education@1x.png");
+  content: '';
+  display: block;
+  filter: hue-rotate(25deg);
+  height: 151%;
+  left: 50%;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  position: absolute;
+  top: 50%;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(20deg) translateY(-50%);
+  -moz-transform: rotate(20deg) translateY(-50%);
+  -o-transform: rotate(20deg) translateY(-50%);
+  -ms-transform: rotate(20deg) translateY(-50%);
+  transform: rotate(20deg) translateY(-50%);
+  width: 56%;
+}
+body#supernet #spnt > div[id="spnt.header"].ieEncabezado {
+  background: #fff url("https://www.santander.com.mx/santander_footer_header/images/logo_santander_footer.png") no-repeat left center !important;
+  -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  height: auto !important;
+  padding: 22.5px 16px;
+  position: fixed !important;
+  text-align: right;
+  top: 0 !important;
+  width: 100vw !important;
+  z-index: 2;
+}
+body#supernet #spnt > div[id="spnt.header"].ieEncabezado > img {
+  display: none;
+}
+body#supernet #spnt > div[id="spnt.header"].ieEncabezado > font {
+  border-radius: 3px;
+  color: var(--texto);
+  font-family: var(--fuente);
+  font-size: 14px !important;
+  padding: 4px 8px;
+  position: static !important;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+body#supernet #spnt > div[id="spnt.header"].ieEncabezado > font:hover {
+  background: var(--gris);
+  color: var(--rojo);
+}
+body#supernet #spnt > div[id="spnt.header"].ieEncabezado > font:last-child {
+  background: transparent url("https://png.icons8.com/ios-glyphs/20/424242/exit.png") no-repeat 6px center;
+  padding: 4px 8px 4px 30px;
+}
+body#supernet #spnt > div[id="spnt.header"].ieEncabezado > font:last-child:hover {
+  background: var(--gris) url("https://png.icons8.com/ios-glyphs/20/ec0000/exit.png") no-repeat 6px center;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] {
+  background-color: transparent !important;
+  height: 100% !important;
+  left: 0 !important;
+  min-width: 222px;
+  padding: 80px 0 0 0;
+  position: fixed !important;
+  top: 0 !important;
+  width: auto !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div {
+  float: none;
+  position: static !important;
+  height: auto !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div > .ieLeftTab,
+body#supernet #spnt > div[id="spnt.tabctrl"] > div > .ieRightTab,
+body#supernet #spnt > div[id="spnt.tabctrl"] > div img {
+  display: none;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(1) fieldset font:before {
+  background-position: 2px 0px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(2) fieldset font:before {
+  background-position: 0 -40px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(3) fieldset font:before {
+  background-position: 0 -279px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(4) fieldset font:before {
+  background-position: 0 -159px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(5) fieldset font:before {
+  background-position: 0 -200px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(6) fieldset font:before {
+  background-position: 0 -120px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(7) fieldset font:before {
+  background-position: 0 -320px !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div > div {
+  height: auto !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset {
+  display: block !important;
+  margin: 0;
+  position: static !important;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font {
+  border-radius: var(--radius1);
+  color: var(--texto);
+  cursor: pointer;
+  display: block !important;
+  font-size: 16px !important;
+  margin: 0 0 12px 0;
+  overflow: hidden;
+  padding: 12px 16px 12px 50px;
+  position: relative;
+  text-align: left;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  transition: 0.3s linear;
+  width: 100%;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font:after,
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font:before {
+  content: '';
+  position: absolute;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font:after {
+  background: #fff;
+  border-left: 0 solid transparent;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.4, 1);
+  -moz-transition: all 0.3s cubic-bezier(0, 0, 0.4, 1);
+  -o-transition: all 0.3s cubic-bezier(0, 0, 0.4, 1);
+  -ms-transition: all 0.3s cubic-bezier(0, 0, 0.4, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.4, 1);
+  width: 0;
+  z-index: -1;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font:before {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif");
+  height: 22px;
+  left: 14px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 26px;
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font:hover,
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font.bodyTabOff {
+  color: var(--rojo);
+}
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font:hover:after,
+body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font.bodyTabOff:after {
+  width: 100%;
+  border-left: 2px solid var(--rojo);
+}
+body#supernet .mainOperations {
+  background: #fff;
+  border-radius: 4px 4px 32px 8px;
+  border: none !important;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+  color: #fff !important;
+  margin: 0 0 1rem 0 !important;
+  overflow: hidden;
+  padding: 0 1rem 1rem;
+}
+body#supernet .mainWin[id="loading.UtilDialog"] {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  display: block;
+  height: 100vh !important;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100vw !important;
+}
+body#supernet .mainWin[id="loading.UtilDialog"] * {
+  display: none;
+  position: static !important;
+  width: 100% !important;
+}
+body#supernet .mainWin[id="loading.UtilDialog"] > div.title {
+  display: none;
+}
+body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: var(--texto) !important;
+  -webkit-background-size: 140px !important;
+  -moz-background-size: 140px !important;
+  background-size: 140px !important;
+  border-radius: 4px 4px 32px 8px;
+  bottom: 20px !important;
+  -webkit-box-shadow: -2px -2px 20px 0px rgba(0,0,0,0.7);
+  box-shadow: -2px -2px 20px 0px rgba(0,0,0,0.7);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: auto !important;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 16px !important;
+  margin: 0 auto;
+  padding: 16px;
+  position: absolute !important;
+  top: initial !important;
+  width: 213px !important;
+  z-index: 5;
+}
+body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg:before {
+  color: #fff;
+  content: 'Cargando...';
+  font-size: 16px;
+  left: 56px;
+  position: absolute;
+  text-transform: uppercase;
+}
+body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg #loadingCont {
+  -webkit-animation: load 1s linear infinite;
+  -moz-animation: load 1s linear infinite;
+  -o-animation: load 1s linear infinite;
+  -ms-animation: load 1s linear infinite;
+  animation: load 1s linear infinite;
+  background: url("https://png.icons8.com/windows/25/ffffff/refresh.png") no-repeat center center !important;
+  border-radius: 50%;
+  display: block;
+  height: 25px !important;
+  margin: 0 auto 0 0 !important;
+  position: static !important;
+  width: 25px !important;
+}
+@-moz-keyframes backgrond {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0 -672px;
+  }
+}
+@-webkit-keyframes backgrond {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0 -672px;
+  }
+}
+@-o-keyframes backgrond {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0 -672px;
+  }
+}
+@keyframes backgrond {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0 -672px;
+  }
+}
+@-moz-keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

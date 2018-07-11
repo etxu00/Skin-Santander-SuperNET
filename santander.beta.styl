@@ -1,0 +1,234 @@
+@import 'nib'
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i')
+
+:root
+ --fuente  'Open Sans', 'Verdana', 'Arial', sans-serif
+ --gris    #e0e0e0
+ --rojo    #ec0000
+ --texto   #212121
+ --radius1 0 3px 15px 0
+
+*
+  box-sizing border-box !important;
+
+body#supernet
+  background var(--gris) !important
+  color var(--texto)
+  font-family 'Open Sans', 'Verdana', 'Arial', sans-serif
+  margin 0
+  min-height 100vh
+  overflow hidden
+  padding 80px 0 0 0
+  &:after
+    animation backgrond 10s linear infinite
+    background url(https://nucleoapp.com/assets/img/premium-icons/outline_48px_school-education@1x.png)
+    content ''
+    display block
+    filter hue-rotate(25deg)
+    height 151%
+    left 50%
+    opacity .2
+    position absolute
+    top 50%
+    transform-origin center center
+    transform rotate(20deg) translateY(-50%)
+    width 56%
+  #spnt
+    > div[id="spnt.header"].ieEncabezado
+      background white url(https://www.santander.com.mx/santander_footer_header/images/logo_santander_footer.png) no-repeat left center !important
+      box-shadow 0 1px 8px rgba(black, .3)
+      height auto !important
+      padding 22.5px 16px
+      position fixed !important
+      text-align right
+      top 0 !important
+      width 100vw !important
+      z-index 2
+      > img
+        display none
+      > font
+        border-radius 3px
+        color var(--texto)
+        font-family var(--fuente)
+        font-size 14px !important
+        padding 4px 8px
+        position static !important
+        text-decoration none
+        text-shadow none
+        transition background .3s ease-in-out
+        &:hover
+          background var(--gris)
+          color var(--rojo)
+        &:last-child
+          background transparent url(https://png.icons8.com/ios-glyphs/20/424242/exit.png) no-repeat 6px center
+          padding 4px 8px 4px 30px
+          &:hover
+            background var(--gris) url(https://png.icons8.com/ios-glyphs/20/ec0000/exit.png) no-repeat 6px center
+    > div[id="spnt.tabctrl"]
+      background-color transparent !important
+      height 100% !important
+      left 0 !important
+      min-width 222px
+      padding 80px 0 0 0
+      position fixed !important
+      top 0 !important
+      width auto !important
+      > div
+        float none
+        position static !important
+        height auto !important
+        > .ieLeftTab
+        > .ieRightTab
+        img
+          display none
+        &:nth-child(1)
+          fieldset
+            font
+              &:before
+                background-position 2px 0px !important
+        &:nth-child(2)
+          fieldset
+            font
+              &:before
+                background-position 0 -40px !important
+        &:nth-child(3)
+          fieldset
+            font
+              &:before
+                background-position 0 -279px !important
+        &:nth-child(4)
+          fieldset
+            font
+              &:before
+                background-position 0 -159px !important
+        &:nth-child(5)
+          fieldset
+            font
+              &:before
+                background-position 0 -200px !important
+        &:nth-child(6)
+          fieldset
+            font
+              &:before
+                background-position 0 -120px !important
+        &:nth-child(7)
+          fieldset
+            font
+              &:before
+                background-position 0 -320px !important
+        > div
+          height auto !important
+        fieldset
+          display block !important
+          margin 0
+          position static !important
+          font
+            border-radius var(--radius1)
+            color var(--texto)
+            cursor pointer
+            display block !important
+            font-size 16px !important
+            margin 0 0 12px 0
+            overflow hidden
+            padding 12px 16px 12px 50px
+            position relative
+            text-align left
+            transition .3s linear
+            width 100%
+            &:after
+            &:before
+              content ''
+              position absolute
+            &:after
+              background white
+              border-left 0 solid transparent
+              height 100%
+              left 0
+              top 0
+              transition all .3s cubic-bezier(0, 0, 0.4, 1)
+              width 0
+              z-index -1
+            &:before
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif)
+              height 22px
+              left 14px
+              top 50%
+              transform translate(0, -50%)
+              width 26px
+            &:hover
+            &.bodyTabOff
+              color var(--rojo)
+              &:after
+                width 100%
+                border-left 2px solid var(--rojo)
+  .mainOperations
+    background white
+    border-radius 4px 4px 32px 8px
+    border none !important
+    box-shadow 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12)
+    color white !important
+    margin 0 0 1rem 0 !important
+    overflow hidden
+    padding 0 1rem 1rem
+  .mainWin[id="loading.UtilDialog"]
+    align-items center
+    background transparent !important
+    border 0 !important
+    border-radius 0 !important
+    display block
+    height 100vh !important
+    justify-content center
+    left 0 !important
+    position fixed !important
+    top 0 !important
+    width 100vw !important
+    *
+      display none
+      position static !important
+      width 100% !important
+    > div.title
+      display none
+    > div.win_bckg
+      align-items center
+      background var(--texto) !important
+      background-size 140px!important
+      border-radius 4px 4px 32px 8px
+      bottom 20px !important
+      box-shadow -2px -2px 20px 0px rgba(0, 0, 0, 0.7)
+      display flex
+      height auto !important
+      justify-content center
+      left 16px !important
+      margin 0 auto
+      padding 16px
+      position absolute !important
+      top initial !important
+      width 213px !important
+      z-index 5
+      &:before
+        color white
+        content 'Cargando...'
+        font-size 16px
+        left 56px
+        position absolute
+        text-transform uppercase
+    > div.win_bckg #loadingCont
+      animation load 1s linear infinite
+      background url(https://png.icons8.com/windows/25/ffffff/refresh.png) no-repeat center center !important
+      border-radius 50%
+      display block
+      height 25px !important
+      margin 0 auto 0 0 !important
+      position static !important
+      width 25px !important
+
+@keyframes backgrond
+  from
+    background-position 0px 0px
+  to
+    background-position 0 -672px
+@keyframes load
+  0%
+    transform rotate(0deg)
+  100%
+    transform rotate(360deg)
