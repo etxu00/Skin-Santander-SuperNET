@@ -2,6 +2,7 @@
 :root {
   --fuente: 'Open Sans', 'Verdana', 'Arial', sans-serif;
   --gris: #e0e0e0;
+  --grisOscuro: #757575;
   --rojo: #ec0000;
   --texto: #212121;
   --radius1: 0 3px 15px 0;
@@ -48,6 +49,26 @@ body#supernet:after {
   -ms-transform: rotate(20deg) translateY(-50%);
   transform: rotate(20deg) translateY(-50%);
   width: 56%;
+  z-index: -1;
+}
+body#supernet > table#tbl {
+  border-collapse: collapse !important;
+  border-spacing: 0px;
+  margin: 0 0 0 238px;
+  width: calc(100% - 238px) !important;
+}
+body#supernet > table#tbl table#tbl {
+  width: 100% !important;
+}
+body#supernet > table#tbl table#tbl tr#i4 > td {
+  width: 100% !important;
+}
+body#supernet #spnt {
+  float: none !important;
+  height: auto !important;
+  margin: -16px 0 0 0;
+  position: relative !important;
+  width: 100% !important;
 }
 body#supernet #spnt > div[id="spnt.header"].ieEncabezado {
   background: #fff url("https://www.santander.com.mx/santander_footer_header/images/logo_santander_footer.png") no-repeat left center !important;
@@ -132,7 +153,9 @@ body#supernet #spnt > div[id="spnt.tabctrl"] > div:nth-child(7) fieldset font:be
   background-position: 0 -320px !important;
 }
 body#supernet #spnt > div[id="spnt.tabctrl"] > div > div {
+  float: none !important;
   height: auto !important;
+  width: 100% !important;
 }
 body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset {
   display: block !important;
@@ -197,6 +220,120 @@ body#supernet #spnt > div[id="spnt.tabctrl"] > div fieldset font.bodyTabOff:afte
   width: 100%;
   border-left: 2px solid var(--rojo);
 }
+body#supernet #spnt > .indraUnderMenu {
+  background: #fff !important;
+  border-radius: 5px;
+  border: 1px solid var(--grisOscuro);
+  left: unset !important;
+  margin: 0;
+  overflow: hidden;
+  position: absolute !important;
+  right: 0 !important;
+  width: 250px !important;
+}
+body#supernet #spnt > .ieTabDivs {
+  background: transparent !important;
+  margin: 16px 0 0 0 !important;
+  padding: 0 !important;
+  position: static !important;
+  width: calc(100% - 250px) !important;
+}
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(1) .utilWnd > .title[id*="UtilHeader"],
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(2) .utilWnd > .title[id*="UtilHeader"] {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif") 13px -510px no-repeat !important;
+}
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(3) .utilWnd > .title[id*="UtilHeader"] {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif") 13px -390px no-repeat !important;
+}
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(4) .utilWnd > .title[id*="UtilHeader"] {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif") 13px -630px no-repeat !important;
+}
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(5) .utilWnd > .title[id*="UtilHeader"] {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif") 13px -550px no-repeat !important;
+}
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(6) .utilWnd > .title[id*="UtilHeader"] {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif") 13px -470px no-repeat !important;
+}
+body#supernet #spnt > .ieTabDivs .ieTab:nth-child(7) .utilWnd > .title[id*="UtilHeader"] {
+  background: url("https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif") 13px -670px no-repeat !important;
+}
+body#supernet #spnt > .ieTabDivs .utilWnd {
+  border: none !important;
+  float: none !important;
+  padding: 0 !important;
+}
+body#supernet #spnt > .ieTabDivs .utilWnd > .title:first-child {
+  display: none !important;
+}
+body#supernet #spnt > .ieTabDivs .utilWnd > .title[id*="UtilHeader"] {
+  background-color: transparent !important;
+  height: auto !important;
+  margin: 0 0 16px 0;
+}
+body#supernet #spnt > .ieTabDivs .utilWnd > .title[id*="UtilHeader"] font {
+  color: #6f6f6f !important;
+  font-size: 18px !important;
+  font-weight: bold;
+  line-height: 1 !important;
+  padding: 0 0 0 42px;
+  position: static !important;
+}
+body#supernet #spnt > .ieTabDivs .utilWnd > .title[id*="UtilHeader"] .dheader {
+  padding: 10px 0 !important;
+}
+body#supernet #spnt > .ieTabDivs .utilWnd > .title table tr {
+  height: auto !important;
+}
+body#supernet #spnt > .ieTransparent {
+  height: auto !important;
+  left: initial !important;
+  right: 0 !important;
+  top: 66px !important;
+  width: 250px !important;
+}
+body#supernet #spnt > div.ieTabDivs > div:not([style*="display: none"]) {
+  -webkit-animation: open 0.5s cubic-bezier(0.35, 0.78, 0.76, 1.31);
+  -moz-animation: open 0.5s cubic-bezier(0.35, 0.78, 0.76, 1.31);
+  -o-animation: open 0.5s cubic-bezier(0.35, 0.78, 0.76, 1.31);
+  -ms-animation: open 0.5s cubic-bezier(0.35, 0.78, 0.76, 1.31);
+  animation: open 0.5s cubic-bezier(0.35, 0.78, 0.76, 1.31);
+}
+body#supernet #spnt > div.ieTabDivs > div {
+  height: auto !important;
+  padding: 0 2rem 0 0;
+  position: static !important;
+  width: 100% !important;
+}
+body#supernet #spnt > div.ieTabDivs > div,
+body#supernet #spnt .utilBody {
+  background: transparent !important;
+}
+body#supernet #spnt .footer {
+  background: rgba(255,152,0,0) !important;
+  bottom: 0 !important;
+  display: block !important;
+  height: auto !important;
+  left: 0 !important;
+  padding: 16px 0;
+  position: fixed !important;
+  top: auto !important;
+  width: 100% !important;
+}
+body#supernet #spnt .footer img {
+  display: none;
+}
+body#supernet #spnt .footer font {
+  position: static !important;
+  padding: 16px 32px 16px 42px !important;
+  background: url("https://png.icons8.com/windows/28/212121/connection-sync.png") no-repeat 8px center;
+  color: var(--texto);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+body#supernet #spnt .footer font:hover {
+  background: url("https://png.icons8.com/windows/28/ec0000/connection-sync.png") no-repeat 8px center;
+  color: var(--rojo);
+}
 body#supernet .mainOperations {
   background: #fff;
   border-radius: 4px 4px 32px 8px;
@@ -207,6 +344,14 @@ body#supernet .mainOperations {
   margin: 0 0 1rem 0 !important;
   overflow: hidden;
   padding: 0 1rem 1rem;
+}
+body#supernet .mainOperations .mainOperations {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0 !important;
+  overflow: initial !important;
+  padding: 0;
 }
 body#supernet .mainWin[id="loading.UtilDialog"] {
   -webkit-box-align: center;
@@ -391,5 +536,93 @@ body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg #loadingCont {
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@-moz-keyframes open {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes open {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-o-keyframes open {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes open {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 }

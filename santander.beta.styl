@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i')
 
 :root
- --fuente  'Open Sans', 'Verdana', 'Arial', sans-serif
- --gris    #e0e0e0
- --rojo    #ec0000
- --texto   #212121
- --radius1 0 3px 15px 0
+ --fuente     'Open Sans', 'Verdana', 'Arial', sans-serif
+ --gris       #e0e0e0
+ --grisOscuro #757575
+ --rojo       #ec0000
+ --texto      #212121
+ --radius1    0 3px 15px 0
 
 *
   box-sizing border-box !important;
@@ -33,7 +34,23 @@ body#supernet
     transform-origin center center
     transform rotate(20deg) translateY(-50%)
     width 56%
+    z-index -1
+  > table#tbl
+    border-collapse collapse !important
+    border-spacing 0px
+    margin 0 0 0 238px
+    width calc(100% - 238px) !important
+    table#tbl
+      width 100% !important
+      tr#i4
+        > td
+          width 100% !important
   #spnt
+    float none !important
+    height auto !important
+    margin -16px 0 0 0
+    position relative !important
+    width 100% !important
     > div[id="spnt.header"].ieEncabezado
       background white url(https://www.santander.com.mx/santander_footer_header/images/logo_santander_footer.png) no-repeat left center !important
       box-shadow 0 1px 8px rgba(black, .3)
@@ -117,7 +134,9 @@ body#supernet
               &:before
                 background-position 0 -320px !important
         > div
+          float none !important
           height auto !important
+          width 100% !important
         fieldset
           display block !important
           margin 0
@@ -161,6 +180,110 @@ body#supernet
               &:after
                 width 100%
                 border-left 2px solid var(--rojo)
+    > .indraUnderMenu
+      background #fff !important
+      border-radius 5px
+      border 1px solid var(--grisOscuro)
+      left unset !important
+      margin 0
+      overflow hidden
+      position absolute !important
+      right 0 !important
+      width 250px !important
+    > .ieTabDivs
+      background transparent !important
+      margin 16px 0 0 0 !important
+      padding 0 !important
+      position static !important
+      width calc(100% - 250px) !important
+      .ieTab
+        &:nth-child(1)
+        &:nth-child(2)
+          .utilWnd
+            > .title[id*="UtilHeader"]
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif) 13px -510px no-repeat !important
+        &:nth-child(3)
+          .utilWnd
+            > .title[id*="UtilHeader"]
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif) 13px -390px no-repeat !important
+        &:nth-child(4)
+          .utilWnd
+            > .title[id*="UtilHeader"]
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif) 13px -630px no-repeat !important
+        &:nth-child(5)
+          .utilWnd
+            > .title[id*="UtilHeader"]
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif) 13px -550px no-repeat !important
+        &:nth-child(6)
+          .utilWnd
+            > .title[id*="UtilHeader"]
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif) 13px -470px no-repeat !important
+        &:nth-child(7)
+          .utilWnd
+            > .title[id*="UtilHeader"]
+              background url(https://www.santander.com.mx/Supernet2007/img/sprite-icons-misc.gif) 13px -670px no-repeat !important
+      .utilWnd
+        border none !important
+        float none !important
+        padding 0 !important
+        > .title:first-child
+          display none !important
+        > .title[id*="UtilHeader"]
+          background-color transparent !important
+          height auto !important
+          margin 0 0 16px 0
+          font
+            color #6f6f6f !important
+            font-size 18px !important
+            font-weight bold
+            line-height 1 !important
+            padding 0 0 0 42px
+            position static !important
+          .dheader
+            padding 10px 0 !important
+        > .title
+          table
+            tr
+              height auto !important
+    > .ieTransparent
+      height auto !important
+      left initial !important
+      right 0 !important
+      top 66px !important
+      width 250px !important
+    > div.ieTabDivs
+      > div:not([style*="display: none"])
+        animation open .5s cubic-bezier(0.35, 0.78, 0.76, 1.31)
+      > div
+        height auto !important
+        padding 0 2rem 0 0
+        position static !important
+        width 100% !important
+    > div.ieTabDivs > div
+    .utilBody
+      background transparent !important
+    .footer
+      background #ff980000 !important
+      bottom 0 !important
+      display block !important
+      height auto !important
+      left 0 !important
+      padding 16px 0
+      position fixed !important
+      top auto !important
+      width 100% !important
+      img
+        display none
+      font
+        position static !important
+        padding 16px 32px 16px 42px !important
+        background url(https://png.icons8.com/windows/28/212121/connection-sync.png) no-repeat 8px center
+        color var(--texto)
+        cursor pointer
+        text-transform uppercase
+        &:hover
+          background url(https://png.icons8.com/windows/28/ec0000/connection-sync.png) no-repeat 8px center
+          color var(--rojo)
   .mainOperations
     background white
     border-radius 4px 4px 32px 8px
@@ -170,6 +293,12 @@ body#supernet
     margin 0 0 1rem 0 !important
     overflow hidden
     padding 0 1rem 1rem
+    .mainOperations
+      background transparent
+      box-shadow none
+      margin 0 !important
+      overflow initial !important
+      padding 0
   .mainWin[id="loading.UtilDialog"]
     align-items center
     background transparent !important
@@ -232,3 +361,10 @@ body#supernet
     transform rotate(0deg)
   100%
     transform rotate(360deg)
+@keyframes open
+  0%
+    opacity 0
+    transform translateY(5rem)
+  100%
+    opacity 1
+    transform translateY(0)
