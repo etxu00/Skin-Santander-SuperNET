@@ -262,6 +262,7 @@ body#supernet
     > div.ieTabDivs > div
     .utilBody
       background transparent !important
+      height auto !important
     .footer
       background #ff980000 !important
       bottom 0 !important
@@ -284,6 +285,12 @@ body#supernet
         &:hover
           background url(https://png.icons8.com/windows/28/ec0000/connection-sync.png) no-repeat 8px center
           color var(--rojo)
+    div[id="spnt.tabdivs.msdr"]
+      div[id="spnt.tabdivs.msdr.oprp"]
+        height auto !important
+        width 20% !important
+      div[id="spnt.tabdivs.msdr.work"]
+        width 80% !important
   .mainOperations
     background white
     border-radius 4px 4px 32px 8px
@@ -299,6 +306,33 @@ body#supernet
       margin 0 !important
       overflow initial !important
       padding 0
+    .caja-header
+      background-color transparent !important
+      background-position-x 0 !important
+      height auto !important
+      margin 0 !important
+      font.header2
+        color var(--rojo)
+        display block
+        font-size 16px !important
+        font-weight 400
+        line-height 1 !important
+        padding 10px 0 10px 31px !important
+        position static !important
+      img.linked
+        padding 0 0 0 100%
+        right -9px !important
+        top 10px !important
+        &[src="https://www.santander.com.mx:443/Supernet2007/img/expand.gif"]
+          animation expand .3s linear
+        &[src="https://www.santander.com.mx:443/Supernet2007/img/colapse.gif"]
+          animation colapse .3s linear
+    td[id="trjtasCredito.contenedorCajaColap"]
+      > div:first-child
+        height auto !important
+        overflow auto !important
+        > table
+          position static !important
   .mainWin[id="loading.UtilDialog"]
     align-items center
     background transparent !important
@@ -359,6 +393,7 @@ body#supernet
     min-width 50vw
     overflow hidden
     width auto !important
+  table[id="trjtasCredito.summ.table"]
   table.eTable
     background white
     overflow hidden
@@ -421,3 +456,17 @@ body#supernet
   100%
     opacity 1
     transform translateY(0)
+@keyframes expand
+  from
+    padding 0
+    transform rotate(-90deg)
+  to
+    padding 0
+    transform rotate(0deg)
+// @keyframes colapse
+//   from
+//     padding 0
+//     transform rotate(0deg)
+//   to
+//     padding 0
+//     transform rotate(90deg)

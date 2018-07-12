@@ -307,6 +307,7 @@ body#supernet #spnt > div.ieTabDivs > div {
 body#supernet #spnt > div.ieTabDivs > div,
 body#supernet #spnt .utilBody {
   background: transparent !important;
+  height: auto !important;
 }
 body#supernet #spnt .footer {
   background: rgba(255,152,0,0) !important;
@@ -334,6 +335,13 @@ body#supernet #spnt .footer font:hover {
   background: url("https://png.icons8.com/windows/28/ec0000/connection-sync.png") no-repeat 8px center;
   color: var(--rojo);
 }
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] {
+  height: auto !important;
+  width: 20% !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.work"] {
+  width: 80% !important;
+}
 body#supernet .mainOperations {
   background: #fff;
   border-radius: 4px 4px 32px 8px;
@@ -352,6 +360,47 @@ body#supernet .mainOperations .mainOperations {
   margin: 0 !important;
   overflow: initial !important;
   padding: 0;
+}
+body#supernet .mainOperations .caja-header {
+  background-color: transparent !important;
+  background-position-x: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+body#supernet .mainOperations .caja-header font.header2 {
+  color: var(--rojo);
+  display: block;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 1 !important;
+  padding: 10px 0 10px 31px !important;
+  position: static !important;
+}
+body#supernet .mainOperations .caja-header img.linked {
+  padding: 0 0 0 100%;
+  right: -9px !important;
+  top: 10px !important;
+}
+body#supernet .mainOperations .caja-header img.linked[src="https://www.santander.com.mx:443/Supernet2007/img/expand.gif"] {
+  -webkit-animation: expand 0.3s linear;
+  -moz-animation: expand 0.3s linear;
+  -o-animation: expand 0.3s linear;
+  -ms-animation: expand 0.3s linear;
+  animation: expand 0.3s linear;
+}
+body#supernet .mainOperations .caja-header img.linked[src="https://www.santander.com.mx:443/Supernet2007/img/colapse.gif"] {
+  -webkit-animation: colapse 0.3s linear;
+  -moz-animation: colapse 0.3s linear;
+  -o-animation: colapse 0.3s linear;
+  -ms-animation: colapse 0.3s linear;
+  animation: colapse 0.3s linear;
+}
+body#supernet .mainOperations td[id="trjtasCredito.contenedorCajaColap"] > div:first-child {
+  height: auto !important;
+  overflow: auto !important;
+}
+body#supernet .mainOperations td[id="trjtasCredito.contenedorCajaColap"] > div:first-child > table {
+  position: static !important;
 }
 body#supernet .mainWin[id="loading.UtilDialog"] {
   -webkit-box-align: center;
@@ -453,14 +502,17 @@ body#supernet .mainWin {
   overflow: hidden;
   width: auto !important;
 }
+body#supernet table[id="trjtasCredito.summ.table"],
 body#supernet table.eTable {
   background: #fff;
   overflow: hidden;
   width: 100%;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr:hover,
 body#supernet table.eTable tr:hover {
   background: #eee !important;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr:not(.tableHeading):nth-child(odd),
 body#supernet table.eTable tr:not(.tableHeading):nth-child(odd) {
   background: #f9f9f9;
   -webkit-transition: 0.3s;
@@ -469,11 +521,15 @@ body#supernet table.eTable tr:not(.tableHeading):nth-child(odd) {
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeadingScrollEC,
 body#supernet table.eTable tr.tableHeadingScrollEC,
+body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeading,
 body#supernet table.eTable tr.tableHeading {
   background: #e0e0e0 !important;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeadingScrollEC td,
 body#supernet table.eTable tr.tableHeadingScrollEC td,
+body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeading td,
 body#supernet table.eTable tr.tableHeading td {
   border: none;
   color: var(--texto) !important;
@@ -485,7 +541,9 @@ body#supernet table.eTable tr.tableHeading td {
   text-transform: uppercase;
   white-space: inherit !important;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeadingScrollEC td:hover:before,
 body#supernet table.eTable tr.tableHeadingScrollEC td:hover:before,
+body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeading td:hover:before,
 body#supernet table.eTable tr.tableHeading td:hover:before {
   background: rgba(224,224,224,0.35);
   content: '';
@@ -495,12 +553,15 @@ body#supernet table.eTable tr.tableHeading td:hover:before {
   top: 100%;
   width: 100%;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr td:first-child,
 body#supernet table.eTable tr td:first-child {
   padding: 14px 0 14px 24px !important;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr td:last-child,
 body#supernet table.eTable tr td:last-child {
   padding: 14px 24px 14px 0 !important;
 }
+body#supernet table[id="trjtasCredito.summ.table"] tr td,
 body#supernet table.eTable tr td {
   background: transparent !important;
   border-bottom: 1px solid #e0e0e0;
@@ -693,5 +754,77 @@ body#supernet table.eTable tr td {
     -o-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+@-moz-keyframes expand {
+  from {
+    padding: 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  to {
+    padding: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes expand {
+  from {
+    padding: 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  to {
+    padding: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes expand {
+  from {
+    padding: 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  to {
+    padding: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes expand {
+  from {
+    padding: 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  to {
+    padding: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
