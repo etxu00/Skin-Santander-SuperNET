@@ -51,6 +51,15 @@ body#supernet:after {
   width: 56%;
   z-index: -1;
 }
+body#supernet table {
+  position: relative !important;
+}
+body#supernet font {
+  font-family: var(--fuente) !important;
+}
+body#supernet .layer {
+  background-color: transparent !important;
+}
 body#supernet > table#tbl {
   border-collapse: collapse !important;
   border-spacing: 0px;
@@ -351,7 +360,7 @@ body#supernet .mainOperations {
   color: #fff !important;
   margin: 0 0 1rem 0 !important;
   overflow: hidden;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 2rem;
 }
 body#supernet .mainOperations .mainOperations {
   background: transparent;
@@ -395,12 +404,12 @@ body#supernet .mainOperations .caja-header img.linked[src="https://www.santander
   -ms-animation: colapse 0.3s linear;
   animation: colapse 0.3s linear;
 }
-body#supernet .mainOperations td[id="trjtasCredito.contenedorCajaColap"] > div:first-child {
-  height: auto !important;
-  overflow: auto !important;
-}
-body#supernet .mainOperations td[id="trjtasCredito.contenedorCajaColap"] > div:first-child > table {
-  position: static !important;
+body#supernet .mainWin[id="loading.UtilDialog"][style*="display: block"] > div.win_bckg {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 body#supernet .mainWin[id="loading.UtilDialog"] {
   -webkit-box-align: center;
@@ -412,7 +421,6 @@ body#supernet .mainWin[id="loading.UtilDialog"] {
   background: transparent !important;
   border: 0 !important;
   border-radius: 0 !important;
-  display: block;
   height: 100vh !important;
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -466,6 +474,16 @@ body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg {
   padding: 16px;
   position: absolute !important;
   top: initial !important;
+  -webkit-transform: translateY(calc(100% + 60px));
+  -moz-transform: translateY(calc(100% + 60px));
+  -o-transform: translateY(calc(100% + 60px));
+  -ms-transform: translateY(calc(100% + 60px));
+  transform: translateY(calc(100% + 60px));
+  -webkit-transition: 0.3s cubic-bezier(0.2, 1.45, 0.85, 1.29);
+  -moz-transition: 0.3s cubic-bezier(0.2, 1.45, 0.85, 1.29);
+  -o-transition: 0.3s cubic-bezier(0.2, 1.45, 0.85, 1.29);
+  -ms-transition: 0.3s cubic-bezier(0.2, 1.45, 0.85, 1.29);
+  transition: 0.3s cubic-bezier(0.2, 1.45, 0.85, 1.29);
   width: 213px !important;
   z-index: 5;
 }
@@ -502,16 +520,134 @@ body#supernet .mainWin {
   overflow: hidden;
   width: auto !important;
 }
+body#supernet [id="ctasCheques.summ.main"],
+body#supernet [id="ctasCheques.UtilCajaColapBody"],
+body#supernet [id="trjtasCredito.summ.main"],
+body#supernet [id="invrsnVista.summ.main"] {
+  height: auto !important;
+  overflow: unset !important;
+  border-radius: 0 0 10px 10px;
+}
+body#supernet [id="ctasCheques.UtilCajaColapBody"],
+body#supernet [id="trjtasCredito.UtilCajaColapBody"] {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s linear !important;
+  -moz-transition: 0.5s linear !important;
+  -o-transition: 0.5s linear !important;
+  -ms-transition: 0.5s linear !important;
+  transition: 0.5s linear !important;
+}
+body#supernet [id="ctasCheques.UtilCajaColapBody"] table,
+body#supernet [id="trjtasCredito.UtilCajaColapBody"] table {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+body#supernet [id="ctasCheques.UtilCajaColapBody"][style*="display: none"],
+body#supernet [id="trjtasCredito.UtilCajaColapBody"][style*="display: none"] {
+  display: block !important;
+  max-height: 0;
+}
+body#supernet [id="ctasCheques.UtilCajaColapBody"][style*="display: none"] table,
+body#supernet [id="trjtasCredito.UtilCajaColapBody"][style*="display: none"] table {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+body#supernet [id="ctasCheques.UtilCajaColapBody"][style*="display: block"],
+body#supernet [id="trjtasCredito.UtilCajaColapBody"][style*="display: block"] {
+  max-height: 100vh;
+}
+body#supernet [id="ctasCheques.UtilCajaColapBody"][style*="display: block"] table,
+body#supernet [id="trjtasCredito.UtilCajaColapBody"][style*="display: block"] table {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+body#supernet table[id="trjtasCredito.summ.table"]:hover tr:not(.tableHeading):nth-child(odd) {
+  background: #f9f9f9 !important;
+}
+body#supernet table[id="trjtasCredito.summ.table"] tr:not(.tableHeading):nth-child(odd) {
+  background: transparent !important;
+}
+body#supernet table[id="trjtasCredito.summ.table"] tbody tr:first-child td:first-child {
+  background: var(--gris) !important;
+  border-radius: 10px 10px 0 0;
+  color: var(--texto) !important;
+  font-size: 12px !important;
+  font-weight: 600;
+  text-transform: uppercase !important;
+}
+body#supernet table[id="trjtasCredito.summ.table"] tbody tr.headerSldCons td {
+  color: var(--texto) !important;
+  font-family: var(--fuente) !important;
+  font-size: 12px !important;
+  font-weight: 600;
+  text-transform: uppercase !important;
+}
+body#supernet table[id="trjtasCredito.summ.table"] tbody tr td font {
+  font-size: 12px;
+}
+body#supernet table[id="invrsnVista.summ.table"]:hover tr:not(.tableHeading):nth-child(odd),
+body#supernet table[id="ctasCheques.summ.table"]:hover tr:not(.tableHeading):nth-child(odd) {
+  background: #f9f9f9 !important;
+}
+body#supernet table[id="invrsnVista.summ.table"] tr:not(.tableHeading):nth-child(odd),
+body#supernet table[id="ctasCheques.summ.table"] tr:not(.tableHeading):nth-child(odd) {
+  background: transparent !important;
+}
+body#supernet table[id="invrsnVista.summ.table"] tbody tr:first-child td:first-child,
+body#supernet table[id="ctasCheques.summ.table"] tbody tr:first-child td:first-child {
+  border-radius: 10px 0 0 0;
+}
+body#supernet table[id="invrsnVista.summ.table"] tbody tr:first-child td:first-child font,
+body#supernet table[id="ctasCheques.summ.table"] tbody tr:first-child td:first-child font {
+  font-size: 12px;
+}
+body#supernet table[id="invrsnVista.summ.table"] tbody tr:first-child td:last-child,
+body#supernet table[id="ctasCheques.summ.table"] tbody tr:first-child td:last-child {
+  border-radius: 0 10px 0 0;
+}
+body#supernet table[id="invrsnVista.summ.table"] tbody tr:first-child td,
+body#supernet table[id="ctasCheques.summ.table"] tbody tr:first-child td {
+  background: var(--gris) !important;
+  color: var(--texto) !important;
+  font-size: 12px !important;
+  font-weight: 600;
+  text-transform: uppercase !important;
+}
+body#supernet table[id="invrsnVista.summ.table"] tbody tr.headerSldCons td,
+body#supernet table[id="ctasCheques.summ.table"] tbody tr.headerSldCons td {
+  color: var(--texto) !important;
+  font-family: var(--fuente) !important;
+  font-size: 12px !important;
+  font-weight: 600;
+  text-transform: uppercase !important;
+}
+body#supernet table[id="invrsnVista.summ.table"],
+body#supernet table[id="ctasCheques.summ.table"],
 body#supernet table[id="trjtasCredito.summ.table"],
 body#supernet table.eTable {
   background: #fff;
+  font-family: var(--fuente) !important;
   overflow: hidden;
+  position: relative !important;
   width: 100%;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr:hover,
+body#supernet table[id="ctasCheques.summ.table"] tr:hover,
 body#supernet table[id="trjtasCredito.summ.table"] tr:hover,
 body#supernet table.eTable tr:hover {
   background: #eee !important;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr:not(.tableHeading):nth-child(odd),
+body#supernet table[id="ctasCheques.summ.table"] tr:not(.tableHeading):nth-child(odd),
 body#supernet table[id="trjtasCredito.summ.table"] tr:not(.tableHeading):nth-child(odd),
 body#supernet table.eTable tr:not(.tableHeading):nth-child(odd) {
   background: #f9f9f9;
@@ -521,28 +657,40 @@ body#supernet table.eTable tr:not(.tableHeading):nth-child(odd) {
   -ms-transition: 0.3s;
   transition: 0.3s;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr.tableHeadingScrollEC,
+body#supernet table[id="ctasCheques.summ.table"] tr.tableHeadingScrollEC,
 body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeadingScrollEC,
 body#supernet table.eTable tr.tableHeadingScrollEC,
+body#supernet table[id="invrsnVista.summ.table"] tr.tableHeading,
+body#supernet table[id="ctasCheques.summ.table"] tr.tableHeading,
 body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeading,
 body#supernet table.eTable tr.tableHeading {
   background: #e0e0e0 !important;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr.tableHeadingScrollEC td,
+body#supernet table[id="ctasCheques.summ.table"] tr.tableHeadingScrollEC td,
 body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeadingScrollEC td,
 body#supernet table.eTable tr.tableHeadingScrollEC td,
+body#supernet table[id="invrsnVista.summ.table"] tr.tableHeading td,
+body#supernet table[id="ctasCheques.summ.table"] tr.tableHeading td,
 body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeading td,
 body#supernet table.eTable tr.tableHeading td {
   border: none;
   color: var(--texto) !important;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   height: auto;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   white-space: inherit !important;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr.tableHeadingScrollEC td:hover:before,
+body#supernet table[id="ctasCheques.summ.table"] tr.tableHeadingScrollEC td:hover:before,
 body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeadingScrollEC td:hover:before,
 body#supernet table.eTable tr.tableHeadingScrollEC td:hover:before,
+body#supernet table[id="invrsnVista.summ.table"] tr.tableHeading td:hover:before,
+body#supernet table[id="ctasCheques.summ.table"] tr.tableHeading td:hover:before,
 body#supernet table[id="trjtasCredito.summ.table"] tr.tableHeading td:hover:before,
 body#supernet table.eTable tr.tableHeading td:hover:before {
   background: rgba(224,224,224,0.35);
@@ -553,14 +701,20 @@ body#supernet table.eTable tr.tableHeading td:hover:before {
   top: 100%;
   width: 100%;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr td:first-child,
+body#supernet table[id="ctasCheques.summ.table"] tr td:first-child,
 body#supernet table[id="trjtasCredito.summ.table"] tr td:first-child,
 body#supernet table.eTable tr td:first-child {
   padding: 14px 0 14px 24px !important;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr td:last-child,
+body#supernet table[id="ctasCheques.summ.table"] tr td:last-child,
 body#supernet table[id="trjtasCredito.summ.table"] tr td:last-child,
 body#supernet table.eTable tr td:last-child {
   padding: 14px 24px 14px 0 !important;
 }
+body#supernet table[id="invrsnVista.summ.table"] tr td,
+body#supernet table[id="ctasCheques.summ.table"] tr td,
 body#supernet table[id="trjtasCredito.summ.table"] tr td,
 body#supernet table.eTable tr td {
   background: transparent !important;

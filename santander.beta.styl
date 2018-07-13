@@ -35,6 +35,12 @@ body#supernet
     transform rotate(20deg) translateY(-50%)
     width 56%
     z-index -1
+  table
+    position relative !important
+  font
+    font-family var(--fuente) !important
+  .layer
+    background-color transparent !important
   > table#tbl
     border-collapse collapse !important
     border-spacing 0px
@@ -299,7 +305,7 @@ body#supernet
     color white !important
     margin 0 0 1rem 0 !important
     overflow hidden
-    padding 0 1rem 1rem
+    padding 0 1rem 2rem
     .mainOperations
       background transparent
       box-shadow none
@@ -327,18 +333,20 @@ body#supernet
           animation expand .3s linear
         &[src="https://www.santander.com.mx:443/Supernet2007/img/colapse.gif"]
           animation colapse .3s linear
-    td[id="trjtasCredito.contenedorCajaColap"]
-      > div:first-child
-        height auto !important
-        overflow auto !important
-        > table
-          position static !important
+    // td[id="trjtasCredito.contenedorCajaColap"]
+    //   > div:first-child
+    //     height auto !important
+    //     overflow auto !important
+    //     > table
+    //       position static !important
+  .mainWin[id="loading.UtilDialog"][style*="display: block"]
+    > div.win_bckg
+      transform translateY(0)
   .mainWin[id="loading.UtilDialog"]
     align-items center
     background transparent !important
     border 0 !important
     border-radius 0 !important
-    display block
     height 100vh !important
     justify-content center
     left 0 !important
@@ -366,6 +374,8 @@ body#supernet
       padding 16px
       position absolute !important
       top initial !important
+      transform translateY(calc(100% + 60px))
+      transition .3s cubic-bezier(0.2, 1.45, 0.85, 1.29)
       width 213px !important
       z-index 5
       &:before
@@ -393,10 +403,98 @@ body#supernet
     min-width 50vw
     overflow hidden
     width auto !important
+  [id="ctasCheques.summ.main"]
+  [id="ctasCheques.UtilCajaColapBody"]
+  [id="trjtasCredito.summ.main"]
+  [id="invrsnVista.summ.main"]
+    height auto !important
+    overflow unset !important
+    border-radius 0 0 10px 10px
+  [id="ctasCheques.UtilCajaColapBody"]
+  [id="trjtasCredito.UtilCajaColapBody"]
+    max-height 0
+    overflow hidden
+    transition .5s linear !important
+    table
+      opacity 0
+      transition opacity .3s linear
+  [id="ctasCheques.UtilCajaColapBody"][style*="display: none"]
+  [id="trjtasCredito.UtilCajaColapBody"][style*="display: none"]
+    display block !important
+    max-height 0
+    table
+      opacity 0
+  [id="ctasCheques.UtilCajaColapBody"][style*="display: block"]
+  [id="trjtasCredito.UtilCajaColapBody"][style*="display: block"]
+    max-height 100vh
+    table
+      opacity 1
+  table[id="trjtasCredito.summ.table"]
+    &:hover
+      tr
+        &:not(.tableHeading):nth-child(odd)
+          background #f9f9f9 !important
+    tr
+      &:not(.tableHeading):nth-child(odd)
+        background transparent !important
+    tbody
+      tr:first-child
+        td:first-child
+          background var(--gris) !important
+          border-radius 10px 10px 0 0
+          color var(--texto) !important
+          font-size 12px !important
+          font-weight 600
+          text-transform uppercase !important
+      tr.headerSldCons
+        td
+          color var(--texto) !important
+          font-family var(--fuente) !important
+          font-size 12px !important
+          font-weight 600
+          text-transform uppercase !important
+      tr
+        td
+          font
+            font-size 12px
+  table[id="invrsnVista.summ.table"]
+  table[id="ctasCheques.summ.table"]
+    &:hover
+      tr
+        &:not(.tableHeading):nth-child(odd)
+          background #f9f9f9 !important
+    tr
+      &:not(.tableHeading):nth-child(odd)
+        background transparent !important
+    tbody
+      tr:first-child
+        td:first-child
+          border-radius 10px 0 0 0
+          font
+            font-size 12px
+        td:last-child
+          border-radius 0 10px 0 0
+        td
+          background var(--gris) !important
+          color var(--texto) !important
+          font-size 12px !important
+          font-weight 600
+          text-transform uppercase !important
+      tr.headerSldCons
+        td
+          color var(--texto) !important
+          font-family var(--fuente) !important
+          font-size 12px !important
+          font-weight 600
+          text-transform uppercase !important
+  table[id="invrsnVista.summ.table"]
+  table[id="ctasCheques.summ.table"]
   table[id="trjtasCredito.summ.table"]
   table.eTable
     background white
+    font-family var(--fuente) !important
     overflow hidden
+    position relative !important
     width 100%
     tr
       &:hover
@@ -411,7 +509,7 @@ body#supernet
           border none
           color var(--texto) !important
           font-size 13px
-          font-weight 700
+          font-weight 600
           height auto
           position relative
           text-align center
