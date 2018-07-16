@@ -243,6 +243,7 @@ body#supernet #spnt > .indraUnderMenu {
 body#supernet #spnt > .ieTabDivs {
   background: transparent !important;
   margin: 16px 0 0 0 !important;
+  overflow: unset !important;
   padding: 0 !important;
   position: static !important;
   width: calc(100% - 250px) !important;
@@ -271,7 +272,7 @@ body#supernet #spnt > .ieTabDivs .utilWnd {
   float: none !important;
   padding: 0 !important;
 }
-body#supernet #spnt > .ieTabDivs .utilWnd > .title:first-child {
+body#supernet #spnt > .ieTabDivs .utilWnd > .title:not([id="oprp.UtilPlus"]):first-child {
   display: none !important;
 }
 body#supernet #spnt > .ieTabDivs .utilWnd > .title[id*="UtilHeader"] {
@@ -317,6 +318,8 @@ body#supernet #spnt > div.ieTabDivs > div,
 body#supernet #spnt .utilBody {
   background: transparent !important;
   height: auto !important;
+  min-height: auto !important;
+  overflow: unset !important;
 }
 body#supernet #spnt .footer {
   background: rgba(255,152,0,0) !important;
@@ -347,12 +350,14 @@ body#supernet #spnt .footer font:hover {
 body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] {
   height: auto !important;
   width: 20% !important;
+  margin: 54px -16px 0 0 !important;
 }
 body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.work"] {
   width: 80% !important;
 }
+body#supernet [id="spnt.tabdivs.msdr.oprp"],
 body#supernet .mainOperations {
-  background: #fff;
+  background: #fff !important;
   border-radius: 4px 4px 32px 8px;
   border: none !important;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
@@ -509,16 +514,188 @@ body#supernet .mainWin[id="loading.UtilDialog"] > div.win_bckg #loadingCont {
   position: static !important;
   width: 25px !important;
 }
-body#supernet .mainWin {
+body#supernet .mainWin:not([id="loading.UtilDialog"]) {
+  background: var(--rojo);
   border: none !important;
   border-radius: 16px 16px 64px 5px;
   -webkit-box-shadow: 0 0 0 200vw rgba(0,0,0,0.4), 0 0 83px 0px rgba(0,0,0,0.431);
   box-shadow: 0 0 0 200vw rgba(0,0,0,0.4), 0 0 83px 0px rgba(0,0,0,0.431);
   height: auto !important;
-  min-height: 50vh;
-  min-width: 50vw;
+  min-width: 60vw;
   overflow: hidden;
   width: auto !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .title {
+  background: transparent !important;
+  height: auto !important;
+  position: relative !important;
+  width: 100% !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .title font.header {
+  color: #fff !important;
+  display: block;
+  padding: 6px 0 6px 12px;
+  position: static !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .win_bckg {
+  height: auto !important;
+  left: -1px !important;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  overflow: hidden;
+  position: relative !important;
+  top: 0 !important;
+  -webkit-transition: opacity 0.2s linear 0.5s;
+  -moz-transition: opacity 0.2s linear 0.5s;
+  -o-transition: opacity 0.2s linear 0.5s;
+  -ms-transition: opacity 0.2s linear 0.5s;
+  transition: opacity 0.2s linear 0.5s;
+  width: calc(100% + 2px) !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .win_bckg:before {
+  background: #fff;
+  content: '';
+  display: block;
+  left: 50%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  padding-top: 200%;
+  position: absolute;
+  top: -50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.2s linear 0.5s;
+  -moz-transition: opacity 0.2s linear 0.5s;
+  -o-transition: opacity 0.2s linear 0.5s;
+  -ms-transition: opacity 0.2s linear 0.5s;
+  transition: opacity 0.2s linear 0.5s;
+  width: 200%;
+  z-index: -1;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .win_bckg [id="divBot1"] {
+  height: auto !important;
+  padding: 0 68px 0 0;
+  text-align: right;
+  width: 100% !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .win_bckg > * {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.3s linear 2s !important;
+  -moz-transition: 0.3s linear 2s !important;
+  -o-transition: 0.3s linear 2s !important;
+  -ms-transition: 0.3s linear 2s !important;
+  transition: 0.3s linear 2s !important;
+  height: auto !important;
+  position: static !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .accionBtn {
+  background: var(--gris) !important;
+  border-radius: 3px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  color: var(--text) !important;
+  font-family: var(--fuente) !important;
+  font-size: 16px;
+  height: auto !important;
+  line-height: 1;
+  margin: 1rem 0;
+  outline: none !important;
+  padding: 6px 12;
+  position: static !important;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  width: auto !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"]) .accionBtn:hover {
+  background: var(--rojo) !important;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12) !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 10px rgba(0,0,0,0.12) !important;
+  color: #fff !important;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"])[style*="display: block"] {
+  -webkit-animation: openModal 0.5s ease-in-out 0.5s;
+  -moz-animation: openModal 0.5s ease-in-out 0.5s;
+  -o-animation: openModal 0.5s ease-in-out 0.5s;
+  -ms-animation: openModal 0.5s ease-in-out 0.5s;
+  animation: openModal 0.5s ease-in-out 0.5s;
+  -webkit-box-shadow: 0 0 0 200vw rgba(0,0,0,0.4), 0 0 83px 0px rgba(0,0,0,0.431);
+  box-shadow: 0 0 0 200vw rgba(0,0,0,0.4), 0 0 83px 0px rgba(0,0,0,0.431);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"])[style*="display: block"] .win_bckg {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"])[style*="display: block"] .win_bckg:before {
+  -webkit-animation: openModalBG 0.5s linear 0.5s;
+  -moz-animation: openModalBG 0.5s linear 0.5s;
+  -o-animation: openModalBG 0.5s linear 0.5s;
+  -ms-animation: openModalBG 0.5s linear 0.5s;
+  animation: openModalBG 0.5s linear 0.5s;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  left: 50%;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  padding-top: 200%;
+  position: absolute;
+  top: -50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 200%;
+}
+body#supernet .mainWin:not([id="loading.UtilDialog"])[style*="display: block"] .win_bckg > * {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+body#supernet #movbit {
+  height: auto !important;
+  margin: 0 !important;
+  position: static !important;
+  width: 100% !important;
+}
+body#supernet [id="movbit.divMain"] {
+  height: auto !important;
+  position: static !important;
+  width: 100% !important;
+}
+body#supernet [id="movbit.divMain"] * {
+  position: static !important;
+  height: auto !important;
+}
+body#supernet [id="movbit.divMain"] .filters {
+  width: 100% !important;
+}
+body#supernet [id="movbit.divMain"] .filters > * {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 body#supernet [id="ctasCheques.summ.main"],
 body#supernet [id="ctasCheques.UtilCajaColapBody"],
@@ -980,5 +1157,113 @@ body#supernet table.eTable tr td {
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+  }
+}
+@-moz-keyframes openModalBG {
+  0% {
+    padding-top: 0;
+    top: 0%;
+    width: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    padding-top: 200%;
+    top: -50%;
+    width: 200%;
+  }
+}
+@-webkit-keyframes openModalBG {
+  0% {
+    padding-top: 0;
+    top: 0%;
+    width: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    padding-top: 200%;
+    top: -50%;
+    width: 200%;
+  }
+}
+@-o-keyframes openModalBG {
+  0% {
+    padding-top: 0;
+    top: 0%;
+    width: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    padding-top: 200%;
+    top: -50%;
+    width: 200%;
+  }
+}
+@keyframes openModalBG {
+  0% {
+    padding-top: 0;
+    top: 0%;
+    width: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    padding-top: 200%;
+    top: -50%;
+    width: 200%;
+  }
+}
+@-moz-keyframes showTable {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-webkit-keyframes showTable {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@-o-keyframes showTable {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+@keyframes showTable {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
