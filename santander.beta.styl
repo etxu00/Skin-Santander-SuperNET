@@ -199,6 +199,7 @@ body#supernet
     > .ieTabDivs
       background transparent !important
       margin 16px 0 0 0 !important
+      overflow unset !important
       padding 0 !important
       position static !important
       width calc(100% - 250px) !important
@@ -232,7 +233,8 @@ body#supernet
         border none !important
         float none !important
         padding 0 !important
-        > .title:first-child
+        width 100% !important
+        > .title:not([id="oprp.UtilPlus"]):first-child
           display none !important
         > .title[id*="UtilHeader"]
           background-color transparent !important
@@ -269,6 +271,8 @@ body#supernet
     .utilBody
       background transparent !important
       height auto !important
+      min-height auto !important
+      overflow unset !important
     .footer
       background #ff980000 !important
       bottom 0 !important
@@ -294,11 +298,85 @@ body#supernet
     div[id="spnt.tabdivs.msdr"]
       div[id="spnt.tabdivs.msdr.oprp"]
         height auto !important
+        margin 54px -16px 0 0 !important
+        padding 1rem 1rem 2rem !important
         width 20% !important
+        .title
+          height auto !important
+        table[id="oprp.tablePlus"]
+          td
+            padding 0 !important
+            #mainButt123
+              display block
+              margin 0 auto
+            #divBody123
+              #panel123
+                display block !important
+                height auto !important
+                width 100% !important
+              #ligasCta123
+                height auto !important
+                margin 1rem 0
+                position static !important
+                width 100% !important
+                img
+                  display none
+                font
+                  background-color #78909c !important
+                  color var(--texto) !important
+                  display block !important
+                  font-size 16px !important
+                  height auto !important
+                  padding 12px 12px 12px 30px
+                  position static !important
+                  text-transform uppercase
+                  width 100% !important
+                  transition .3s
+                  &:before
+                    border-bottom 3px solid white
+                    border-radius 3px
+                    border-right 3px solid white
+                    content ''
+                    display block
+                    float right
+                    height 8px
+                    margin 0 26px 0 0
+                    opacity 0
+                    transform rotate(-45deg)
+                    transition opacity .3s cubic-bezier(0, 0, 0.34, 1.21), margin .3s cubic-bezier(0, 0, 0.34, 1.21)
+                    width 8px
+                  &:hover
+                    color var(--texto) !important
+                    &:before
+                      margin 0
+                      opacity 1
+                #lblAlta123
+                  border-radius 5px 5px 0 0
+                  background url(https://png.icons8.com/windows/18/ffffff/edit.png) no-repeat 6px center
+                  &:hover
+                    background-color #00bcd4 !important
+                #lblDomiciliar123
+                  background url(https://png.icons8.com/windows/18/ffffff/home.png) no-repeat 6px center
+                  &:hover
+                    background-color #009688 !important
+                #lblDinero
+                  background url(https://png.icons8.com/material/18/ffffff/combo-chart.png) no-repeat 6px center
+                  &:hover
+                    background-color #4caf50 !important
+                #lblGanado
+                  background url(https://png.icons8.com/windows/18/ffffff/money-bag.png) no-repeat 6px center
+                  &:hover
+                    background-color #8bc34a !important
+                #lblNomina
+                  background url(https://png.icons8.com/windows/18/ffffff/cash-in-hand.png) no-repeat 6px center
+                  border-radius 0 0 5px 5px
+                  &:hover
+                    background-color #cddc39 !important
       div[id="spnt.tabdivs.msdr.work"]
         width 80% !important
+  [id="spnt.tabdivs.msdr.oprp"]
   .mainOperations
-    background white
+    background white !important
     border-radius 4px 4px 32px 8px
     border none !important
     box-shadow 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12)
@@ -306,6 +384,7 @@ body#supernet
     margin 0 0 1rem 0 !important
     overflow hidden
     padding 0 1rem 2rem
+  .mainOperations
     .mainOperations
       background transparent
       box-shadow none
@@ -394,15 +473,118 @@ body#supernet
       margin 0 auto 0 0 !important
       position static !important
       width 25px !important
-  .mainWin
-    border none !important;
+  .mainWin:not([id="loading.UtilDialog"])
+    background var(--rojo)
+    border none !important
     border-radius 16px 16px 64px 5px
     box-shadow 0 0 0 200vw #00000066, 0 0 83px 0px #0000006e
     height auto !important
-    min-height 50vh
-    min-width 50vw
+    // min-height 50vh
+    min-width 60vw
     overflow hidden
     width auto !important
+    .title
+      background transparent !important
+      height auto !important
+      position relative !important
+      width 100% !important
+      font.header
+        color white !important
+        display block
+        padding 6px 0 6px 12px
+        position static !important
+    .win_bckg
+      height auto !important
+      left -1px !important
+      opacity 0
+      overflow hidden
+      position relative !important
+      top 0 !important
+      transition opacity .2s linear .5s
+      width calc(100% + 2px) !important
+      &:before
+        background white
+        content ''
+        display block
+        left 50%
+        opacity 0
+        padding-top 200%
+        position absolute
+        top -50%
+        transform translateX(-50%)
+        transition opacity .2s linear .5s
+        width 200%
+        z-index -1
+      [id="divBot1"]
+        height auto !important
+        padding 0 68px 0 0
+        text-align right
+        width 100% !important
+      > *
+        opacity 0
+        transition .3s linear 2s !important
+        height auto !important
+        position static !important
+    .accionBtn
+      background var(--gris) !important
+      border-radius 3px
+      box-shadow none !important
+      color var(--text) !important
+      font-family var(--fuente) !important
+      font-size 16px
+      height auto !important
+      line-height 1
+      margin 1rem 0
+      outline none !important
+      padding 6px 12
+      position static !important
+      text-align center
+      text-transform uppercase
+      transition .3s
+      width auto !important
+      &:hover
+        background var(--rojo) !important
+        box-shadow 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12) !important
+        color white !important
+  .mainWin:not([id="loading.UtilDialog"])[style*="display: block"]
+    animation openModal .5s ease-in-out .5s
+    box-shadow 0 0 0 200vw rgba(0, 0, 0, .4), 0 0 83px 0px rgba(0, 0, 0, .431)
+    opacity 1
+    transform translateY(0)
+    .win_bckg
+      opacity 1
+      &:before
+        animation openModalBG .5s linear .5s
+        background white
+        border-radius 50%
+        display block
+        left 50%
+        opacity 1
+        padding-top 200%
+        position absolute
+        top -50%; 
+        transform translateX(-50%)
+        width 200%
+      > *
+        opacity 1
+  #movbit
+    height auto !important
+    margin 0 !important
+    position static !important
+    width 100% !important
+  [id="movbit.divMain"]
+    height auto !important
+    position static !important
+    width 100% !important
+    *
+      position static !important
+      height auto !important
+    .filters
+      width 100% !important
+      > *
+        margin 0 !important
+        padding 0 !important
+        width 100% !important
   [id="ctasCheques.summ.main"]
   [id="ctasCheques.UtilCajaColapBody"]
   [id="trjtasCredito.summ.main"]
@@ -582,6 +764,23 @@ body#supernet
   to
     padding 0
     transform rotate(0deg)
+@keyframes openModalBG
+  0%
+    padding-top 0
+    top 0%
+    width 0
+  50%
+    top 50%
+  100%
+    padding-top 200%
+    top -50%
+    width 200%
+@keyframes showTable
+  0%
+    opacity 0
+  100%
+    opacity 1
+
 // @keyframes colapse
 //   from
 //     padding 0
