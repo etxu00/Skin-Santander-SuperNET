@@ -271,6 +271,7 @@ body#supernet #spnt > .ieTabDivs .utilWnd {
   border: none !important;
   float: none !important;
   padding: 0 !important;
+  width: 100% !important;
 }
 body#supernet #spnt > .ieTabDivs .utilWnd > .title:not([id="oprp.UtilPlus"]):first-child {
   display: none !important;
@@ -349,8 +350,114 @@ body#supernet #spnt .footer font:hover {
 }
 body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] {
   height: auto !important;
-  width: 20% !important;
   margin: 54px -16px 0 0 !important;
+  padding: 1rem 1rem 2rem !important;
+  width: 20% !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] .title {
+  height: auto !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td {
+  padding: 0 !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #mainButt123 {
+  display: block;
+  margin: 0 auto;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #panel123 {
+  display: block !important;
+  height: auto !important;
+  width: 100% !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 {
+  height: auto !important;
+  margin: 1rem 0;
+  position: static !important;
+  width: 100% !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 img {
+  display: none;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 font {
+  background-color: #78909c !important;
+  color: var(--texto) !important;
+  display: block !important;
+  font-size: 16px !important;
+  height: auto !important;
+  padding: 12px 12px 12px 30px;
+  position: static !important;
+  text-transform: uppercase;
+  width: 100% !important;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 font:before {
+  border-bottom: 3px solid #fff;
+  border-radius: 3px;
+  border-right: 3px solid #fff;
+  content: '';
+  display: block;
+  float: right;
+  height: 8px;
+  margin: 0 26px 0 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  -moz-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  -o-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  -ms-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  width: 8px;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 font:hover {
+  color: var(--texto) !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 font:hover:before {
+  margin: 0;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblAlta123 {
+  border-radius: 5px 5px 0 0;
+  background: url("https://png.icons8.com/windows/18/ffffff/edit.png") no-repeat 6px center;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblAlta123:hover {
+  background-color: #00bcd4 !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblDomiciliar123 {
+  background: url("https://png.icons8.com/windows/18/ffffff/home.png") no-repeat 6px center;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblDomiciliar123:hover {
+  background-color: #009688 !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblDinero {
+  background: url("https://png.icons8.com/material/18/ffffff/combo-chart.png") no-repeat 6px center;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblDinero:hover {
+  background-color: #4caf50 !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblGanado {
+  background: url("https://png.icons8.com/windows/18/ffffff/money-bag.png") no-repeat 6px center;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblGanado:hover {
+  background-color: #8bc34a !important;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblNomina {
+  background: url("https://png.icons8.com/windows/18/ffffff/cash-in-hand.png") no-repeat 6px center;
+  border-radius: 0 0 5px 5px;
+}
+body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 #lblNomina:hover {
+  background-color: #cddc39 !important;
 }
 body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.work"] {
   width: 80% !important;

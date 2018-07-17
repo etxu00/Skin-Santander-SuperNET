@@ -233,6 +233,7 @@ body#supernet
         border none !important
         float none !important
         padding 0 !important
+        width 100% !important
         > .title:not([id="oprp.UtilPlus"]):first-child
           display none !important
         > .title[id*="UtilHeader"]
@@ -297,8 +298,80 @@ body#supernet
     div[id="spnt.tabdivs.msdr"]
       div[id="spnt.tabdivs.msdr.oprp"]
         height auto !important
-        width 20% !important
         margin 54px -16px 0 0 !important
+        padding 1rem 1rem 2rem !important
+        width 20% !important
+        .title
+          height auto !important
+        table[id="oprp.tablePlus"]
+          td
+            padding 0 !important
+            #mainButt123
+              display block
+              margin 0 auto
+            #divBody123
+              #panel123
+                display block !important
+                height auto !important
+                width 100% !important
+              #ligasCta123
+                height auto !important
+                margin 1rem 0
+                position static !important
+                width 100% !important
+                img
+                  display none
+                font
+                  background-color #78909c !important
+                  color var(--texto) !important
+                  display block !important
+                  font-size 16px !important
+                  height auto !important
+                  padding 12px 12px 12px 30px
+                  position static !important
+                  text-transform uppercase
+                  width 100% !important
+                  transition .3s
+                  &:before
+                    border-bottom 3px solid white
+                    border-radius 3px
+                    border-right 3px solid white
+                    content ''
+                    display block
+                    float right
+                    height 8px
+                    margin 0 26px 0 0
+                    opacity 0
+                    transform rotate(-45deg)
+                    transition opacity .3s cubic-bezier(0, 0, 0.34, 1.21), margin .3s cubic-bezier(0, 0, 0.34, 1.21)
+                    width 8px
+                  &:hover
+                    color var(--texto) !important
+                    &:before
+                      margin 0
+                      opacity 1
+                #lblAlta123
+                  border-radius 5px 5px 0 0
+                  background url(https://png.icons8.com/windows/18/ffffff/edit.png) no-repeat 6px center
+                  &:hover
+                    background-color #00bcd4 !important
+                #lblDomiciliar123
+                  background url(https://png.icons8.com/windows/18/ffffff/home.png) no-repeat 6px center
+                  &:hover
+                    background-color #009688 !important
+                #lblDinero
+                  background url(https://png.icons8.com/material/18/ffffff/combo-chart.png) no-repeat 6px center
+                  &:hover
+                    background-color #4caf50 !important
+                #lblGanado
+                  background url(https://png.icons8.com/windows/18/ffffff/money-bag.png) no-repeat 6px center
+                  &:hover
+                    background-color #8bc34a !important
+                #lblNomina
+                  background url(https://png.icons8.com/windows/18/ffffff/cash-in-hand.png) no-repeat 6px center
+                  border-radius 0 0 5px 5px
+                  &:hover
+                    background-color #cddc39 !important
       div[id="spnt.tabdivs.msdr.work"]
         width 80% !important
   [id="spnt.tabdivs.msdr.oprp"]
