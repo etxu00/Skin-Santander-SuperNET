@@ -322,6 +322,63 @@ body#supernet #spnt .utilBody {
   min-height: auto !important;
   overflow: unset !important;
 }
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"],
+body#supernet #spnt .utilBody table[id="oprp.Container"],
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td,
+body#supernet #spnt .utilBody table[id="oprp.Container"] td {
+  padding: 0 !important;
+  width: 100% !important;
+}
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] .oprpLabels,
+body#supernet #spnt .utilBody table[id="oprp.Container"] .oprpLabels,
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td .oprpLabels,
+body#supernet #spnt .utilBody table[id="oprp.Container"] td .oprpLabels {
+  color: var(--texto) !important;
+  font-family: var(--fuente) !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  padding: 6px 0 !important;
+  position: static !important;
+}
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] .oprpLabels font,
+body#supernet #spnt .utilBody table[id="oprp.Container"] .oprpLabels font,
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td .oprpLabels font,
+body#supernet #spnt .utilBody table[id="oprp.Container"] td .oprpLabels font {
+  display: block !important;
+  font-size: 14px !important;
+  position: static !important;
+  top: 0 !important;
+}
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"],
+body#supernet #spnt .utilBody table[id="oprp.Container"] {
+  background: #78909c;
+}
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] div.linked,
+body#supernet #spnt .utilBody table[id="oprp.Container"] div.linked {
+  width: 100% !important;
+}
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] div.linked img:not(.linked),
+body#supernet #spnt .utilBody table[id="oprp.Container"] div.linked img:not(.linked) {
+  display: none;
+}
+body#supernet #spnt > div.ieTabDivs > div .mainOperation,
+body#supernet #spnt .utilBody .mainOperation {
+  background: #f1f1f1 !important;
+  border-radius: 5px;
+  border: none !important;
+  margin: 10px 10px 10px 10px !important;
+  width: calc(100% - 20px) !important;
+}
+body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font.header3,
+body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font.header3 {
+  display: block !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding: 5px 0;
+  position: static !important;
+  width: 100% !important;
+}
 body#supernet #spnt .footer {
   background: rgba(255,152,0,0) !important;
   bottom: 0 !important;
