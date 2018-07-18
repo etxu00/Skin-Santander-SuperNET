@@ -5,6 +5,7 @@
  --fuente     'Open Sans', 'Verdana', 'Arial', sans-serif
  --gris       #e0e0e0
  --grisOscuro #757575
+ --grisOp     #78909c
  --rojo       #ec0000
  --texto      #212121
  --radius1    0 3px 15px 0
@@ -232,6 +233,7 @@ body#supernet
       .utilWnd
         border none !important
         float none !important
+        height auto !important
         padding 0 !important
         width 100% !important
         > .title:not([id="oprp.UtilPlus"]):first-child
@@ -277,7 +279,11 @@ body#supernet
       table[id="oprp.Container"] td
         padding 0 !important
         width 100% !important
+        td.oprap
+          background var(--grisOp) 
+          background transparent !important
         .oprpLabels
+          background transparent !important
           color var(--texto) !important
           font-family var(--fuente) !important
           height auto !important
@@ -286,13 +292,15 @@ body#supernet
           padding 6px 0 !important
           position static !important
           font
+            color #6f7b8a !important
             display block !important
-            font-size 14px !important
+            font-size 12px !important
+            font-weight normal !important
             position static !important
             top 0 !important
       table[id="oprp.Container"]
-        background #78909c
         div.linked
+          position static !important
           width 100% !important
           img:not(.linked)
             display none
@@ -307,11 +315,30 @@ body#supernet
           font
             &.header3
               display block !important
-              font-size 14px !important
-              font-weight normal !important
-              padding 5px 0
+              font-size 10px !important
+              font-weight bold !important
+              overflow hidden
+              padding 12px 12px 12px 30px !important
               position static !important
+              text-overflow ellipsis
+              text-transform uppercase
+              white-space nowrap
               width 100% !important
+            &[id="pgserquick.title"]
+              background var(--grisOp) url(https://png.icons8.com/windows/18/ffffff/document.png) no-repeat 6px center
+              border-radius 5px 5px 0 0 !important
+            &[id="pgtarquick.title"]
+              background var(--grisOp) url(https://png.icons8.com/ios/18/ffffff/bank-cards.png) no-repeat 6px center
+              border-radius 0 0 5px 5px
+            &[id="tranquick.title"]
+              background var(--grisOp) url(https://png.icons8.com/material/18/ffffff/refresh.png) no-repeat 6px center
+              border-radius 5px 5px 0 0
+            &[id="oprp.asociNoMovilImgLb"]
+              background var(--grisOp) url(https://png.icons8.com/windows/18/ffffff/android.png) no-repeat 6px center
+              border-radius 0 0 5px 5px
+            &[id="msfquick.title"]
+              background var(--grisOp) url(https://png.icons8.com/windows/18/ffffff/christmas-star.png) no-repeat 6px center
+              border-radius 5px
     .footer
       background #ff980000 !important
       bottom 0 !important
@@ -361,7 +388,7 @@ body#supernet
                 img
                   display none
                 font
-                  background-color #78909c !important
+                  background-color var(--grisOp) !important
                   color var(--texto) !important
                   display block !important
                   font-size 16px !important

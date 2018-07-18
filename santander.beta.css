@@ -3,6 +3,7 @@
   --fuente: 'Open Sans', 'Verdana', 'Arial', sans-serif;
   --gris: #e0e0e0;
   --grisOscuro: #757575;
+  --grisOp: #78909c;
   --rojo: #ec0000;
   --texto: #212121;
   --radius1: 0 3px 15px 0;
@@ -270,6 +271,7 @@ body#supernet #spnt > .ieTabDivs .ieTab:nth-child(7) .utilWnd > .title[id*="Util
 body#supernet #spnt > .ieTabDivs .utilWnd {
   border: none !important;
   float: none !important;
+  height: auto !important;
   padding: 0 !important;
   width: 100% !important;
 }
@@ -329,10 +331,18 @@ body#supernet #spnt .utilBody table[id="oprp.Container"] td {
   padding: 0 !important;
   width: 100% !important;
 }
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td.oprap,
+body#supernet #spnt .utilBody table[id="oprp.Container"] td.oprap,
+body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td td.oprap,
+body#supernet #spnt .utilBody table[id="oprp.Container"] td td.oprap {
+  background: var(--grisOp);
+  background: transparent !important;
+}
 body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] .oprpLabels,
 body#supernet #spnt .utilBody table[id="oprp.Container"] .oprpLabels,
 body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td .oprpLabels,
 body#supernet #spnt .utilBody table[id="oprp.Container"] td .oprpLabels {
+  background: transparent !important;
   color: var(--texto) !important;
   font-family: var(--fuente) !important;
   height: auto !important;
@@ -345,17 +355,16 @@ body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] .oprpLabels
 body#supernet #spnt .utilBody table[id="oprp.Container"] .oprpLabels font,
 body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] td .oprpLabels font,
 body#supernet #spnt .utilBody table[id="oprp.Container"] td .oprpLabels font {
+  color: #6f7b8a !important;
   display: block !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
   position: static !important;
   top: 0 !important;
 }
-body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"],
-body#supernet #spnt .utilBody table[id="oprp.Container"] {
-  background: #78909c;
-}
 body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] div.linked,
 body#supernet #spnt .utilBody table[id="oprp.Container"] div.linked {
+  position: static !important;
   width: 100% !important;
 }
 body#supernet #spnt > div.ieTabDivs > div table[id="oprp.Container"] div.linked img:not(.linked),
@@ -373,11 +382,41 @@ body#supernet #spnt .utilBody .mainOperation {
 body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font.header3,
 body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font.header3 {
   display: block !important;
-  font-size: 14px !important;
-  font-weight: normal !important;
-  padding: 5px 0;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  overflow: hidden;
+  padding: 12px 12px 12px 30px !important;
   position: static !important;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
   width: 100% !important;
+}
+body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font[id="pgserquick.title"],
+body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font[id="pgserquick.title"] {
+  background: var(--grisOp) url("https://png.icons8.com/windows/18/ffffff/document.png") no-repeat 6px center;
+  border-radius: 5px 5px 0 0 !important;
+}
+body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font[id="pgtarquick.title"],
+body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font[id="pgtarquick.title"] {
+  background: var(--grisOp) url("https://png.icons8.com/ios/18/ffffff/bank-cards.png") no-repeat 6px center;
+  border-radius: 0 0 5px 5px;
+}
+body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font[id="tranquick.title"],
+body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font[id="tranquick.title"] {
+  background: var(--grisOp) url("https://png.icons8.com/material/18/ffffff/refresh.png") no-repeat 6px center;
+  border-radius: 5px 5px 0 0;
+}
+body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font[id="oprp.asociNoMovilImgLb"],
+body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font[id="oprp.asociNoMovilImgLb"] {
+  background: var(--grisOp) url("https://png.icons8.com/windows/18/ffffff/android.png") no-repeat 6px center;
+  border-radius: 0 0 5px 5px;
+}
+body#supernet #spnt > div.ieTabDivs > div [id="oprp.UtilBody"] div.linked font[id="msfquick.title"],
+body#supernet #spnt .utilBody [id="oprp.UtilBody"] div.linked font[id="msfquick.title"] {
+  background: var(--grisOp) url("https://png.icons8.com/windows/18/ffffff/christmas-star.png") no-repeat 6px center;
+  border-radius: 5px;
 }
 body#supernet #spnt .footer {
   background: rgba(255,152,0,0) !important;
@@ -436,7 +475,7 @@ body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"]
   display: none;
 }
 body#supernet #spnt div[id="spnt.tabdivs.msdr"] div[id="spnt.tabdivs.msdr.oprp"] table[id="oprp.tablePlus"] td #divBody123 #ligasCta123 font {
-  background-color: #78909c !important;
+  background-color: var(--grisOp) !important;
   color: var(--texto) !important;
   display: block !important;
   font-size: 16px !important;
