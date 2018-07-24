@@ -573,12 +573,13 @@ body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations d
 body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a,
 body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a,
 body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a {
-  font-size: 14px !important;
-  background: #fff !important;
-  color: var(--texto) !important;
+  background: var(--grisOp) !important;
+  color: #fff !important;
   display: block !important;
   font-family: var(--fuente) !important;
+  font-size: 14px !important;
   padding: 10px !important;
+  position: relative;
   text-transform: none;
 }
 body#supernet [id="spnt.tabdivs.pgs"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover,
@@ -587,15 +588,64 @@ body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations d
 body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover,
 body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover,
 body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover {
-  color: var(--rojo) !important;
+  background: var(--rojo) !important;
+  cursor: pointer;
 }
-body#supernet [id="spnt.tabdivs.pgs"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:not(:last-child) td,
-body#supernet [id="spnt.tabdivs.tran"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:not(:last-child) td,
-body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:not(:last-child) td,
-body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:not(:last-child) td,
-body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:not(:last-child) td,
-body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:not(:last-child) td {
-  border-bottom: 1px solid var(--gris) !important;
+body#supernet [id="spnt.tabdivs.pgs"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover:before,
+body#supernet [id="spnt.tabdivs.tran"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover:before,
+body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover:before,
+body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover:before,
+body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover:before,
+body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:hover:before {
+  margin: 0;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+body#supernet [id="spnt.tabdivs.pgs"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:before,
+body#supernet [id="spnt.tabdivs.tran"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:before,
+body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:before,
+body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:before,
+body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:before,
+body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr td a:before {
+  border-bottom: 3px solid #fff;
+  border-radius: 3px;
+  border-right: 3px solid #fff;
+  content: '';
+  display: block;
+  float: right;
+  height: 8px;
+  margin: 0 26px 0 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: rotate(-45deg) translate(-1px, 3px);
+  -moz-transform: rotate(-45deg) translate(-1px, 3px);
+  -o-transform: rotate(-45deg) translate(-1px, 3px);
+  -ms-transform: rotate(-45deg) translate(-1px, 3px);
+  transform: rotate(-45deg) translate(-1px, 3px);
+  -webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  -moz-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  -o-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  -ms-transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  transition: opacity 0.3s cubic-bezier(0, 0, 0.34, 1.21), margin 0.3s cubic-bezier(0, 0, 0.34, 1.21);
+  width: 8px;
+}
+body#supernet [id="spnt.tabdivs.pgs"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:first-child td a,
+body#supernet [id="spnt.tabdivs.tran"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:first-child td a,
+body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:first-child td a,
+body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:first-child td a,
+body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:first-child td a,
+body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:first-child td a {
+  border-radius: 5px 5px 0 0;
+}
+body#supernet [id="spnt.tabdivs.pgs"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:last-child td a,
+body#supernet [id="spnt.tabdivs.tran"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:last-child td a,
+body#supernet [id="spnt.tabdivs.bpriv"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:last-child td a,
+body#supernet [id="spnt.tabdivs.dire"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:last-child td a,
+body#supernet [id="spnt.tabdivs.admn"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:last-child td a,
+body#supernet [id="spnt.tabdivs.inve"] .utilWnd .utilBody div .mainOperations div .mainOperations div table.confirmData tbody tr:last-child td a {
+  border-radius: 0 0 5px 5px;
 }
 body#supernet [id="spnt.tabdivs.msdr.oprp"],
 body#supernet .mainOperations {
@@ -624,18 +674,29 @@ body#supernet .mainOperations .caja-header {
   margin: 0 !important;
 }
 body#supernet .mainOperations .caja-header font.header2 {
-  color: var(--rojo);
-  display: block;
-  font-size: 16px !important;
-  font-weight: 400;
   line-height: 1 !important;
-  padding: 10px 0 10px 31px !important;
   position: static !important;
+  padding: 10px 0 10px 0 !important;
+  color: #6f7b8a !important;
+  display: block !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  background: #fff;
 }
 body#supernet .mainOperations .caja-header img.linked {
   padding: 0 0 0 100%;
   right: -9px !important;
   top: 10px !important;
+}
+body#supernet .mainOperations .caja-header img.linked:hover + font.header2 {
+  background: transparent;
+  cursor: pointer;
+  padding: 10px 0 10px 30px !important;
 }
 body#supernet .mainOperations .caja-header img.linked[src="https://www.santander.com.mx:443/Supernet2007/img/expand.gif"] {
   -webkit-animation: expand 0.3s linear;
@@ -1412,7 +1473,7 @@ body#supernet table.eTable tr td {
   }
   100% {
     padding-top: 200%;
-    top: -50%;
+    top: 0%;
     width: 200%;
   }
 }
@@ -1427,7 +1488,7 @@ body#supernet table.eTable tr td {
   }
   100% {
     padding-top: 200%;
-    top: -50%;
+    top: 0%;
     width: 200%;
   }
 }
@@ -1442,7 +1503,7 @@ body#supernet table.eTable tr td {
   }
   100% {
     padding-top: 200%;
-    top: -50%;
+    top: 0%;
     width: 200%;
   }
 }
@@ -1457,7 +1518,7 @@ body#supernet table.eTable tr td {
   }
   100% {
     padding-top: 200%;
-    top: -50%;
+    top: 0%;
     width: 200%;
   }
 }
